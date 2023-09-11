@@ -4,6 +4,7 @@ const logoColor = require("../../assets/images/logo/logo-color.png");
 const logoNoBackground = require("../../assets/images/logo/logo-no-background.png");
 const logoWhite = require("../../assets/images/logo/logo-white.png");
 const developer = require("../../assets/images/developer/developer.jpg");
+const loading = require("../../assets/images/loading/loading.gif");
 
 export default {
   logoBlack,
@@ -11,4 +12,5 @@ export default {
   logoNoBackground,
   logoWhite,
   developer,
+  loading,
 };

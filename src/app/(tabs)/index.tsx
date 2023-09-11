@@ -12,7 +12,7 @@ export default function HomeScreen() {
         data={posts}
         renderItem={({ item }) => <PostListItem post={item} />}
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ gap: 20 }}
+        contentContainerStyle={{ gap: 10 }}
       />
     </View>
   );

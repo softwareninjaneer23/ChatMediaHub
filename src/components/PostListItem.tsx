@@ -1,7 +1,13 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
 import {
-  AntDesign,
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  TouchableOpacity,
+  Pressable,
+} from "react-native";
+import {
   Entypo,
   FontAwesome,
   FontAwesome5,
@@ -11,6 +17,7 @@ import {
 //customs
 import { Post } from "../types";
 import { COLORS } from "../constants";
+import { Link } from "expo-router";
 
 //specify the prop type
 type PostListItemProps = {
@@ -52,15 +59,22 @@ export default function PostListItem({ post }: PostListItemProps) {
       </View>
 
       {/*user post content section*/}
-      <TouchableOpacity
-        onPress={() => setShowMore(!showMore)}
-        style={styles.postTextContentContainer}
-      >
+      <View style={styles.postTextContentContainer}>
         <Text
           numberOfLines={showMore ? 100 : 3}
           style={styles.postTextContentTextItem}
         >
-          {post.content}
+          <Link href={`/posts/${post.id}`}>{post.content}</Link>
+        </Text>
+      </View>
+
+      {/*see more*/}
+      <TouchableOpacity
+        onPress={() => setShowMore(!showMore)}
+        style={styles.seeMoreTextContainer}
+      >
+        <Text style={styles.seeMoreTextItem}>
+          {showMore ? "...less" : "...see more"}
         </Text>
       </TouchableOpacity>
 
@@ -79,7 +93,6 @@ export default function PostListItem({ post }: PostListItemProps) {
           style={styles.actionContentContainer}
         >
           <SimpleLineIcons name="like" size={16} color={COLORS.lightBlue} />
-          <Text style={styles.actionTextItem}>Like</Text>
         </TouchableOpacity>
 
         {/*comment action*/}
@@ -88,7 +101,6 @@ export default function PostListItem({ post }: PostListItemProps) {
           style={styles.actionContentContainer}
         >
           <FontAwesome5 name="comment" size={16} color={COLORS.lightBlue} />
-          <Text style={styles.actionTextItem}>Comment</Text>
         </TouchableOpacity>
 
         {/*share action*/}
@@ -101,7 +113,6 @@ export default function PostListItem({ post }: PostListItemProps) {
             size={16}
             color={COLORS.lightBlue}
           />
-          <Text style={styles.actionTextItem}>Share</Text>
         </TouchableOpacity>
 
         {/*send action*/}
@@ -110,7 +121,6 @@ export default function PostListItem({ post }: PostListItemProps) {
           style={styles.actionContentContainer}
         >
           <FontAwesome name="send-o" size={16} color={COLORS.lightBlue} />
-          <Text style={styles.actionTextItem}>Send</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -119,9 +129,12 @@ export default function PostListItem({ post }: PostListItemProps) {
 
 const styles = StyleSheet.create({
   postListContainer: {
-    paddingVertical: 0,
+    width: "100%",
+    maxWidth: 500,
+    paddingTop: 10,
     flexDirection: "column",
-    borderRadius: 10,
+    alignSelf: "center",
+    backgroundColor: COLORS.reechGray,
   },
 
   //top image section
@@ -182,6 +195,18 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: "400",
   },
+  seeMoreTextContainer: {
+    justifyContent: "center",
+    alignItems: "flex-end",
+    paddingHorizontal: 10,
+    marginBottom: 5,
+  },
+  seeMoreTextItem: {
+    color: COLORS.white,
+    fontSize: 12,
+    fontWeight: "400",
+    opacity: 0.5,
+  },
   postImageContainer: {
     width: "100%",
   },
@@ -199,7 +224,6 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     borderColor: COLORS.gray,
     borderTopWidth: 0.5,
-    borderBottomWidth: 0.5,
   },
   actionContentContainer: {
     width: "22%",
@@ -207,11 +231,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "row",
-  },
-  actionTextItem: {
-    color: COLORS.white,
-    fontSize: 14,
-    fontWeight: "600",
-    marginLeft: 10,
   },
 });
