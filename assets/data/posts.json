@@ -3,11 +3,12 @@
     "id": "2",
     "author": {
       "id": "u2",
+      "subscribed": "1st",
       "name": "Neo Mokhele",
       "position": "Founder at Chat Media Hub",
       "image": "https://scontent-jnb1-1.xx.fbcdn.net/v/t39.30808-6/241160934_407333700735384_6753269422517740560_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=1b51e3&_nc_eui2=AeGkD-7D3jX-LDl0ccNJhKgflMJEgXTuCUqUwkSBdO4JSsUKXSYtGxefSCmxu1D_jla_FpyqSSD6vx03GPTX8ZKn&_nc_ohc=7HuQrNs05tAAX_akjeY&_nc_ht=scontent-jnb1-1.xx&oh=00_AfAPVrkb2RjfFZrnQgDYaCzBWa4n4xNiE2yNusTtRhMgMg&oe=6504E26D"
     },
-    "content": " With the Chat Media Hub, we can now manage all our social media accounts from one convenient dashboard. This means more efficient posting, monitoring, and engagement across platforms. We're taking data-driven decision-making to the next level. The hub provides real-time analytics and performance metrics, allowing us to fine-tune our social media strategy for better results. Our teams can now collaborate seamlessly on content creation, scheduling, and campaigns. This fosters creativity, ensures consistency, and maximizes the impact of our social media efforts. We value your input and feedback! Our Social Media Hub will help us stay even more connected with our incredible community. We're looking forward to more meaningful interactions and conversations.",
+    "content": "With the Chat Media Hub, we can now manage all our social media accounts from one convenient dashboard. This means more efficient posting, monitoring, and engagement across platforms. We're taking data-driven decision-making to the next level. The hub provides real-time analytics and performance metrics, allowing us to fine-tune our social media strategy for better results. Our teams can now collaborate seamlessly on content creation, scheduling, and campaigns. This fosters creativity, ensures consistency, and maximizes the impact of our social media efforts. We value your input and feedback! Our Social Media Hub will help us stay even more connected with our incredible community. We're looking forward to more meaningful interactions and conversations.",
     "image": "https://www.weblineindia.com/wp-content/uploads/2019/01/react-native-build-mobile-apps-with-increased-developer-productivity.gif",
     "likes": 670,
     "comments": []
@@ -16,12 +17,13 @@
     "id": "stepzen",
     "author": {
       "id": "u2",
+      "subscribed": "1st",
       "name": "StepZen, an IBM Company",
       "position": "GraphQL server with unique architecture",
       "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/stepzen.jpeg"
     },
     "content": "A federated GraphQL API (supergraph) brings together different services (subgraphs) into one unified API endpoint. Whether your subgraphs are built with StepZen or with another library or technology, you can assemble them into a federated graph using StepZen.",
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/stepzen-stickers.png",
+    "image": "https://camo.githubusercontent.com/2fef49c67f8e76db9e0f97b96c7f756b72d7fc1f299d0489ee016ccb911a891a/68747470733a2f2f737465707a656e2e636f6d2f696d616765732f737465707a656e2d737469636b6572732e706e67",
     "likes": 348,
     "comments": []
   },
@@ -29,11 +31,58 @@
     "id": "1",
     "author": {
       "id": "u1",
-      "name": "Jeff Bezon",
-      "position": "Intern @Amazon",
-      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/jeff.jpeg"
+      "subscribed": "2nd",
+      "name": "Nikkita Wong",
+      "position": "Senior Enterprise Architecture",
+      "image": "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80"
     },
-    "content": "Exciting news! Just landed an internship at Amazon. I figured it's about time I try out this whole e-commerce thing. 😄 #NewBeginnings #FromCEOtoIntern",
+    "content": "Architecture reflects the culture, history, and aspirations of a society. From the towering skyscrapers of modern cities to the ancient temples that stand as testaments to bygone eras, each architectural marvel tells a unique story. Architects are the visionaries who push the boundaries of creativity. They seamlessly blend form and function, creating structures that not only serve practical purposes but also elevate our spirits with their beauty and ingenuity.",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "likes": 254,
+    "comments": [
+      {
+        "user": {
+          "name": "Elon Musk",
+          "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/elon.png"
+        },
+        "comment": "Insightful read.",
+        "timestamp": "2023-07-16T17:15:00Z"
+      },
+      {
+        "user": {
+          "name": "Peter Johnson",
+          "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/11.png"
+        },
+        "comment": "Thank you for sharing!",
+        "timestamp": "2023-07-16T18:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "author": {
+      "id": "u3",
+      "subscribed": "3rd",
+      "name": "Peter Johnson",
+      "position": "Program Manager at Facebook",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/zuck.jpeg"
+    },
+    "content": "Startups are the heartbeat of innovation, the embodiment of entrepreneurial spirit, and the driving force behind transformative change. Today, let's celebrate the incredible journey of startups and the impact they have on our world. Startups begin as a spark of inspiration in the minds of passionate individuals. They take an idea, a dream, and work tirelessly to turn it into a reality. This journey of nurturing and growing ideas is the essence of entrepreneurship. Share your favorite startup success stories or tag a startup founder who inspires you. Together, let's continue to champion innovation, creativity, and the relentless pursuit of progress. 💪🌟 #Startups #Innovation #Entrepreneurship #ChangeMakers #DreamBig #Collaboration #EconomicGrowth",
+    "image": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "likes": 432,
+    "comments": []
+  },
+  {
+    "id": "4",
+    "author": {
+      "id": "u5",
+      "subscribed": "1st",
+      "name": "Mercedes Benz USA",
+      "position": "Motor Vehicle Manufactoring",
+      "image": "https://static.vecteezy.com/system/resources/previews/018/911/657/original/mercedes-benz-car-logo-free-vector.jpg"
+    },
+    "content": "At Mercedes-Benz’s Design No. 5 event at its Carlsbad, California design centre, the automaker pulled the covers off its Vision One-Eleven electric vehicle, a concept sports car study that “progressively reinterprets” the C 111 research vehicles of the late 1960s and early 1970s, a series of gull-wing cars that tested a variety of powertrains, including Wankels, turbodiesels, and gas V8s, setting numerous speed records in the process.",
+    "image": "https://smartcdn.gprod.postmedia.digital/driving/wp-content/uploads/2023/06/2023-Mercedes-Benz-Vision-One-Eleven-concept-16.jpg",
     "likes": 254,
     "comments": [
       {
@@ -53,17 +102,5 @@
         "timestamp": "2023-07-16T18:00:00Z"
       }
     ]
-  },
-  {
-    "id": "3",
-    "author": {
-      "id": "u3",
-      "name": "Peter Johnson",
-      "position": "CTO at Facebook",
-      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/zuck.jpeg"
-    },
-    "content": "Join me for a talk on scaling technology in startups",
-    "likes": 432,
-    "comments": []
   }
 ]

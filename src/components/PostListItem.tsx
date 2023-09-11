@@ -34,7 +34,12 @@ export default function PostListItem({ post }: PostListItemProps) {
 
         {/*user bio item*/}
         <View style={styles.userNameContainer}>
-          <Text style={styles.userNameTextItem}>{post.author.name}</Text>
+          <Text style={styles.userNameTextItem}>
+            {post.author.name} ·{" "}
+            <Text style={styles.userSubscribeTextItem}>
+              {post.author.subscribed}
+            </Text>
+          </Text>
           <Text style={styles.userPositionTextItem}>
             {post.author.position}
           </Text>
@@ -114,8 +119,7 @@ export default function PostListItem({ post }: PostListItemProps) {
 
 const styles = StyleSheet.create({
   postListContainer: {
-    marginTop: 10,
-    paddingVertical: 10,
+    paddingVertical: 0,
     flexDirection: "column",
     borderRadius: 10,
   },
@@ -156,6 +160,12 @@ const styles = StyleSheet.create({
     fontWeight: "400",
     opacity: 0.5,
   },
+  userSubscribeTextItem: {
+    color: COLORS.white,
+    fontSize: 12,
+    fontWeight: "400",
+    opacity: 0.5,
+  },
   moreOptionContainer: {
     width: "10%",
     marginTop: 10,
@@ -184,10 +194,12 @@ const styles = StyleSheet.create({
   //bottom image section
   userActionContainer: {
     width: "100%",
+    paddingVertical: 5,
     flexDirection: "row",
     justifyContent: "space-around",
     borderColor: COLORS.gray,
     borderTopWidth: 0.5,
+    borderBottomWidth: 0.5,
   },
   actionContentContainer: {
     width: "22%",
