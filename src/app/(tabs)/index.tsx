@@ -1,22 +1,22 @@
 import { StyleSheet } from "react-native";
-import { Text, View } from "../../components/Themed";
+import { View } from "../../components/Themed";
+
+//components
+import posts from "../../../assets/data/posts.json";
+import PostListItem from "../../components/PostListItem";
+
+const firstPost = posts[0];
 
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Home</Text>
+    <View style={styles.homeScreenContainer}>
+      <PostListItem post={firstPost} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  homeScreenContainer: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
   },
 });

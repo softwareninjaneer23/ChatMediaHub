@@ -1,0 +1,22 @@
+{
+  "id": "u2",
+  "name": "Neo Mokhele",
+  "position": "Founder at Chat Media Hub",
+  "image": "../../assets/images/developer/developer.jpg",
+  "backImage": "https://images.unsplash.com/photo-1604964432806-254d07c11f32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2ZWxvcGVyfGVufDB8fDB8fHww&w=1000&q=80",
+  "about": "Hi, I'm Neo Mokhele, a passionate frontend mobile developer specializing in Expo, the cutting-edge platform for building high-quality mobile applications. With a strong background in mobile app development and a keen eye for user-centric design, I create immersive and engaging experiences for iOS and Android users.",
+  "experience": [
+    {
+      "id": "e1",
+      "title": "Founder",
+      "companyName": "Chat Media Hub",
+      "companyImage": "../../assets/images/logo/logo-color.png"
+    },
+    {
+      "id": "e2",
+      "title": "Co-Founder & CTO",
+      "companyName": "Fitenium",
+      "companyImage": "https://media.licdn.com/dms/image/C4D0BAQHg4ra02yFrcw/company-logo_200_200/0/1573813337379?e=1697673600&v=beta&t=3wUnjLtfkYpIMJg4ZP2qq7Vj0rvU7aUOVrkffLabTuQ"
+    }
+  ]
+}
