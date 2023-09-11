@@ -5,6 +5,7 @@ export type Post = {
   content: string;
   image?: string; // string or missing
   likes: number;
+  author: User;
 };
 
 export type User = {

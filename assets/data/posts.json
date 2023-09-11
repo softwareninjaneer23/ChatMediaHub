@@ -5,9 +5,9 @@
       "id": "u2",
       "name": "Neo Mokhele",
       "position": "Founder at Chat Media Hub",
-      "image": "../../assets/images/developer/developer.jpg"
+      "image": "https://scontent-jnb1-1.xx.fbcdn.net/v/t39.30808-6/241160934_407333700735384_6753269422517740560_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=1b51e3&_nc_eui2=AeGkD-7D3jX-LDl0ccNJhKgflMJEgXTuCUqUwkSBdO4JSsUKXSYtGxefSCmxu1D_jla_FpyqSSD6vx03GPTX8ZKn&_nc_ohc=7HuQrNs05tAAX_akjeY&_nc_ht=scontent-jnb1-1.xx&oh=00_AfAPVrkb2RjfFZrnQgDYaCzBWa4n4xNiE2yNusTtRhMgMg&oe=6504E26D"
     },
-    "content": "What does Chat Media Hub mean to you?",
+    "content": " With the Chat Media Hub, we can now manage all our social media accounts from one convenient dashboard. This means more efficient posting, monitoring, and engagement across platforms. We're taking data-driven decision-making to the next level. The hub provides real-time analytics and performance metrics, allowing us to fine-tune our social media strategy for better results. Our teams can now collaborate seamlessly on content creation, scheduling, and campaigns. This fosters creativity, ensures consistency, and maximizes the impact of our social media efforts. We value your input and feedback! Our Social Media Hub will help us stay even more connected with our incredible community. We're looking forward to more meaningful interactions and conversations.",
     "image": "https://www.weblineindia.com/wp-content/uploads/2019/01/react-native-build-mobile-apps-with-increased-developer-productivity.gif",
     "likes": 670,
     "comments": []
@@ -20,7 +20,7 @@
       "position": "GraphQL server with unique architecture",
       "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/stepzen.jpeg"
     },
-    "content": "Become a GraphQL Ninja with StepZen 🚀",
+    "content": "A federated GraphQL API (supergraph) brings together different services (subgraphs) into one unified API endpoint. Whether your subgraphs are built with StepZen or with another library or technology, you can assemble them into a federated graph using StepZen.",
     "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/stepzen-stickers.png",
     "likes": 348,
     "comments": []
