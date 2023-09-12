@@ -42,7 +42,7 @@ export default function PostListItem({ post }: PostListItemProps) {
         {/*user bio item*/}
         <View style={styles.userNameContainer}>
           <Text style={styles.userNameTextItem}>
-            {post.author.name} ·{" "}
+            <Link href={`/users/${post.author.id}`}>{post.author.name}</Link> ·{" "}
             <Text style={styles.userSubscribeTextItem}>
               {post.author.subscribed}
             </Text>

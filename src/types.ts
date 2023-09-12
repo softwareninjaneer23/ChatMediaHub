@@ -14,4 +14,8 @@ export type User = {
   position: string;
   image?: string; // string or missing
   subscribed: string;
+  backImage?: string;
+  connections: number;
+  about?: string;
+  location: string;
 };
