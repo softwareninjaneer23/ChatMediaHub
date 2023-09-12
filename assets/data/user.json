@@ -11,17 +11,37 @@
   "experience": [
     {
       "id": "e1",
-      "subscribed": "1st",
-      "title": "Founder",
+      "title": "Founder & CEO",
       "companyName": "Chat Media Hub",
-      "companyImage": "../images/logo/logo-color.png"
+      "companyImage": "",
+      "occupationType": "Full-time",
+      "fromDate": "June 2023",
+      "toDate": "Present",
+      "duration": "3 mos",
+      "location": "On-site",
+      "skills": [
+        { "id": 1, "skill": "React Native" },
+        { "id": 2, "skill": "GraphQL" },
+        { "id": 3, "skill": "MongoDB" },
+        { "id": 4, "skill": "Nodejs" },
+        { "id": 5, "skill": "Azure" }
+      ]
     },
     {
       "id": "e2",
-      "subscribed": "3rd",
       "title": "Co-Founder & CTO",
       "companyName": "Fitenium",
-      "companyImage": "https://media.licdn.com/dms/image/C4D0BAQHg4ra02yFrcw/company-logo_200_200/0/1573813337379?e=1697673600&v=beta&t=3wUnjLtfkYpIMJg4ZP2qq7Vj0rvU7aUOVrkffLabTuQ"
+      "companyImage": "https://media.licdn.com/dms/image/C4D0BAQHg4ra02yFrcw/company-logo_200_200/0/1573813337379?e=1697673600&v=beta&t=3wUnjLtfkYpIMJg4ZP2qq7Vj0rvU7aUOVrkffLabTuQ",
+      "occupationType": "Internship",
+      "fromDate": "Dec 2021",
+      "toDate": "Sept 2022",
+      "duration": "1 yr 3 mos",
+      "location": "City of Johannesburg, Gauteng, South Africa",
+      "skills": [
+        { "id": 1, "skill": "React Native" },
+        { "id": 2, "skill": "GraphQL" },
+        { "id": 3, "skill": "MongoDB" }
+      ]
     }
   ]
 }

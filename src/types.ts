@@ -18,4 +18,23 @@ export type User = {
   connections: number;
   about?: string;
   location: string;
+  experience?: Experience[];
+};
+
+export type Experience = {
+  id: number;
+  title: string;
+  companyName: string;
+  companyImage?: string;
+  occupationType: string;
+  fromDate: string;
+  toDate: string;
+  duration: string;
+  location: string;
+  skills?: Skills[];
+};
+
+export type Skills = {
+  id: number;
+  skill: string;
 };

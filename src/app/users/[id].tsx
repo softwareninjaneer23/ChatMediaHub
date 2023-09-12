@@ -1,11 +1,19 @@
 import React, { useLayoutEffect, useState } from "react";
-import { StyleSheet, Text, Image, View, TouchableOpacity } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  Image,
+  View,
+  TouchableOpacity,
+  ScrollView,
+} from "react-native";
 import { useLocalSearchParams, useNavigation } from "expo-router";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
 
 //custom
 import userJson from "../../../assets/data/user.json";
 import { User } from "../../types";
+import ExperienceListItem from "../../components/ExperienceListItem";
 import { COLORS } from "../../../src/constants";
 
 export default function UserProfileScreen() {
@@ -32,7 +40,10 @@ export default function UserProfileScreen() {
   };
 
   return (
-    <View style={styles.userDetailsContainer}>
+    <ScrollView
+      showsVerticalScrollIndicator={false}
+      style={styles.userDetailsContainer}
+    >
       {/*header section*/}
       <View style={styles.userTopInfoSection}>
         {/*background image section*/}
@@ -126,7 +137,13 @@ export default function UserProfileScreen() {
       </View>
 
       {/*experience section*/}
-    </View>
+      <View style={styles.experienceSubContainer}>
+        <Text style={styles.experienceTextHeadingItem}>Experiences</Text>
+        {user.experience?.map((experience) => (
+          <ExperienceListItem key={experience.id} experience={experience} />
+        ))}
+      </View>
+    </ScrollView>
   );
 }
 
@@ -269,7 +286,7 @@ const styles = StyleSheet.create({
   //about section
   aboutUserContainer: {
     flexDirection: "column",
-    marginBottom: 5,
+    marginBottom: 10,
     paddingVertical: 15,
     paddingHorizontal: 20,
     backgroundColor: COLORS.reechGray,
@@ -284,5 +301,20 @@ const styles = StyleSheet.create({
     color: COLORS.white,
     fontSize: 12,
     fontWeight: "400",
+  },
+
+  // experience section
+  experienceSubContainer: {
+    flexDirection: "column",
+    marginBottom: 10,
+    paddingVertical: 15,
+    paddingHorizontal: 20,
+    backgroundColor: COLORS.reechGray,
+  },
+  experienceTextHeadingItem: {
+    color: COLORS.white,
+    fontSize: 18,
+    fontWeight: "600",
+    marginBottom: 5,
   },
 });
