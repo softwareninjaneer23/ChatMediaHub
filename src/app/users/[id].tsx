@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { StyleSheet, Text, Image, View } from "react-native";
-import { useLocalSearchParams } from "expo-router";
+import React, { useLayoutEffect, useState } from "react";
+import { StyleSheet, Text, Image, View, TouchableOpacity } from "react-native";
+import { useLocalSearchParams, useNavigation } from "expo-router";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
 
 //custom
@@ -9,9 +9,27 @@ import { User } from "../../types";
 import { COLORS } from "../../../src/constants";
 
 export default function UserProfileScreen() {
-  const [user, setUser] = useState<User>(userJson);
-
   const { id } = useLocalSearchParams();
+  const navigation = useNavigation();
+
+  //state handlers
+  const [user, setUser] = useState<User>(userJson);
+  const [showMore, setShowMore] = useState(false);
+
+  //change the screen title to display user name
+  useLayoutEffect(() => {
+    navigation.setOptions({ title: user.name });
+  }, [user?.name]);
+
+  //connect function
+  const makeConnection = () => {
+    console.log("make connection");
+  };
+
+  //follow function
+  const addFollowing = () => {
+    console.log("establish a follow");
+  };
 
   return (
     <View style={styles.userDetailsContainer}>
@@ -67,16 +85,22 @@ export default function UserProfileScreen() {
         {/*connect button section*/}
         <View style={styles.connectionButtonContainer}>
           {/*connect button*/}
-          <View style={styles.connectButtonContainer}>
+          <TouchableOpacity
+            onPress={makeConnection}
+            style={styles.connectButtonContainer}
+          >
             <FontAwesome name="user-plus" size={14} color={COLORS.black} />
             <Text style={styles.connectButtonTextItem}> connect</Text>
-          </View>
+          </TouchableOpacity>
 
           {/*follow button*/}
-          <View style={styles.followButtonContainer}>
+          <TouchableOpacity
+            onPress={addFollowing}
+            style={styles.followButtonContainer}
+          >
             <FontAwesome name="plus" size={14} color={COLORS.lightBlue} />
             <Text style={styles.followButtonTextItem}> follow</Text>
-          </View>
+          </TouchableOpacity>
 
           {/*more option button*/}
           <View style={styles.optionButtonContainer}>
@@ -92,7 +116,13 @@ export default function UserProfileScreen() {
       {/*about section*/}
       <View style={styles.aboutUserContainer}>
         <Text style={styles.aboutUserTextHeadingItem}>About</Text>
-        <Text style={styles.aboutUserTextItem}>{user.about}</Text>
+        <Text
+          onPress={() => setShowMore(!showMore)}
+          numberOfLines={showMore ? 100 : 4}
+          style={styles.aboutUserTextItem}
+        >
+          {user.about}
+        </Text>
       </View>
 
       {/*experience section*/}
