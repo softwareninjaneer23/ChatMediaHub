@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "userImage": "https://scontent-jnb1-1.xx.fbcdn.net/v/t39.30808-6/241160934_407333700735384_6753269422517740560_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=1b51e3&_nc_ohc=zDzQPY6dN6UAX-jKA1G&_nc_ht=scontent-jnb1-1.xx&oh=00_AfDndOo0h9TFFQ-x4Up4AP8fKsaWkjmbUW5Xb3GJ6FDtpg&oe=650AD12D",
+    "premiumPeople": [
+      {
+        "id": 1,
+        "personImage": "https://images.unsplash.com/photo-1531384698654-7f6e477ca221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1300&q=80"
+      },
+      {
+        "id": 2,
+        "personImage": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80"
+      },
+      {
+        "id": 3,
+        "personImage": "https://images.squarespace-cdn.com/content/v1/5919b41a15d5db3071c6a46b/1637461399926-223GW8VEGXR4501QP20I/%23hiring?format=300w"
+      }
+    ]
+  }
+]

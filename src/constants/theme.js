@@ -21,6 +21,7 @@ export const darkMode = {
 export const COLORS = {
   blue: "#013163",
   lightBlue: "#0096FF",
+  darkBlue: "#1c2c34",
   greyRgba: `rgba(46,48,53, 0.9)`,
   teal: "#00AAB2",
   tealRGB: "0, 128, 128",

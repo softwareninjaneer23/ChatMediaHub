@@ -38,3 +38,58 @@ export type Skills = {
   id: number;
   skill: string;
 };
+
+export type RecentJobSearch = {
+  id: number;
+  jobName: string;
+  jobLocation: string;
+  newJob: boolean;
+  jobCount: number;
+};
+
+export type RecommendedJobList = {
+  id: number;
+  companyImage: string;
+  jobTitle: string;
+  companyName: string;
+  companyLocation: string;
+  jobType: string;
+  activelyRecruiting: boolean;
+  postedDate: string;
+  isEasyApply: boolean;
+  promoted: boolean;
+  numberOfApplicants: number;
+  connectionWhoWorkHere: ConnectionWhoWorkHere[];
+};
+
+export type ConnectionWhoWorkHere = {
+  id: number;
+  connectionImage: string;
+};
+
+export type PremiumJob = {
+  id: number;
+  userImage: string;
+  premiumPeople: PremiumPeople[];
+};
+
+export type PremiumPeople = {
+  id: number;
+  personImage: string;
+};
+
+export type PremiumJobList = {
+  id: number;
+  companyImage: string;
+  jobTitle: string;
+  companyName: string;
+  companyLocation: string;
+  jobType: string;
+  activelyRecruiting: boolean;
+  postedDate: string;
+  isEasyApply: boolean;
+  promoted: boolean;
+  numberOfApplicants: number;
+  matchesProfile: boolean;
+  userProfile: string;
+};

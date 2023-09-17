@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "companyImage": "https://media.licdn.com/dms/image/C4D0BAQGzKTBKVA4rtQ/company-logo_200_200/0/1663684220307?e=2147483647&v=beta&t=07ib_hifOqKTU0SYhHjkJ8sfrL9wZyRrB8-Jqj7BTWA",
+    "jobTitle": "Intermediate Web Developer",
+    "companyName": "Salt",
+    "companyLocation": "City of Cape Town, Western Cape, South Africa",
+    "jobType": "Hybrid",
+    "activelyRecruiting": false,
+    "postedDate": "2 days ago",
+    "isEasyApply": false,
+    "promoted": false,
+    "numberOfApplicants": 280,
+    "connectionWhoWorkHere": [
+      {
+        "id": 1,
+        "connectionImage": "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "companyImage": "https://media.licdn.com/dms/image/C4D0BAQHaJUSMtMx4lQ/company-logo_200_200/0/1632116099001/nerospec_pty_ltd__logo?e=2147483647&v=beta&t=A3ScXuXKwybvpq2avjr4zIMSR5I55lxkIWDE7Tcl6s0",
+    "jobTitle": "Firmware Engineer",
+    "companyName": "Nerospec Group",
+    "companyLocation": "Randburg, Gauteng, South Africa",
+    "jobType": "On-site",
+    "activelyRecruiting": true,
+    "postedDate": "",
+    "isEasyApply": true,
+    "promoted": true,
+    "numberOfApplicants": 48,
+    "connectionWhoWorkHere": []
+  },
+  {
+    "id": 3,
+    "companyImage": "https://media.licdn.com/dms/image/C4D0BAQGdaGBqW9sqkQ/company-logo_200_200/0/1660552313540?e=2147483647&v=beta&t=EZlRT4ed0jZt6kO5WjBuR7yqDj1uqbEZOYDF-x0RnvE",
+    "jobTitle": "Full Stack Developer (With Front End) - Grow to Team Lead",
+    "companyName": "DAV Professional Placement Group",
+    "companyLocation": "City of Cape Town, Western Cape, South Africa",
+    "jobType": "On-site",
+    "activelyRecruiting": false,
+    "postedDate": "10 mins ago",
+    "isEasyApply": true,
+    "promoted": false,
+    "numberOfApplicants": 0,
+    "connectionWhoWorkHere": [
+      {
+        "id": 1,
+        "connectionImage": "https://images.unsplash.com/photo-1582015752624-e8b1c75e3711?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+      },
+      {
+        "id": 2,
+        "connectionImage": "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80"
+      },
+      {
+        "id": 3,
+        "connectionImage": "https://images.unsplash.com/photo-1534607287018-541c7d97748f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1325&q=80"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "companyImage": "https://media.licdn.com/dms/image/C4E0BAQFnsxIk5RSRdA/company-logo_200_200/0/1519856476194?e=2147483647&v=beta&t=3wRGZKZLWrRpZLImnUlMsZRemwp60hHk7z8Y9B0iVAY",
+    "jobTitle": "Lead Javascript Developer",
+    "companyName": "Pentasia",
+    "companyLocation": "Durban, KwaZulu-Natal, South Africa",
+    "jobType": "On-site",
+    "activelyRecruiting": true,
+    "postedDate": "",
+    "isEasyApply": true,
+    "promoted": true,
+    "numberOfApplicants": 24,
+    "connectionWhoWorkHere": []
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "jobName": "React Native",
+    "jobLocation": "South Africa",
+    "newJob": false,
+    "jobCount": 0
+  },
+  {
+    "id": 2,
+    "jobName": "Wordpress",
+    "jobLocation": "South Africa",
+    "newJob": true,
+    "jobCount": 67
+  },
+  {
+    "id": 3,
+    "jobName": "Laravel",
+    "jobLocation": "South Africa",
+    "newJob": false,
+    "jobCount": 0
+  },
+  {
+    "id": 4,
+    "jobName": "Database Administrator",
+    "jobLocation": "South Africa",
+    "newJob": true,
+    "jobCount": 150
+  },
+  {
+    "id": 5,
+    "jobName": "Frontend Developer",
+    "jobLocation": "South Africa",
+    "newJob": true,
+    "jobCount": 43
+  },
+  {
+    "id": 6,
+    "jobName": "Full Stack Developer",
+    "jobLocation": "South Africa",
+    "newJob": false,
+    "jobCount": 0
+  }
+]

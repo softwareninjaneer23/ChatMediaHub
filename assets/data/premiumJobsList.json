@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "companyImage": "https://media.licdn.com/dms/image/C510BAQHV1zbmq3Xg2g/company-logo_200_200/0/1528365148178?e=2147483647&v=beta&t=EnoHpzm7cGmDJ1saTiK1z2TtCUKsqc3KTrGT-byG5w4",
+    "jobTitle": "Software Developer/FullStack Developer",
+    "companyName": "IT Ridge Technologies",
+    "companyLocation": "Gauteng, South Africa",
+    "jobType": "On-site",
+    "activelyRecruiting": false,
+    "postedDate": "1 month ago",
+    "isEasyApply": false,
+    "promoted": false,
+    "numberOfApplicants": 57,
+    "matchesProfile": true,
+    "userProfile": "https://scontent-jnb1-1.xx.fbcdn.net/v/t39.30808-6/241160934_407333700735384_6753269422517740560_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=1b51e3&_nc_ohc=zDzQPY6dN6UAX-jKA1G&_nc_ht=scontent-jnb1-1.xx&oh=00_AfDndOo0h9TFFQ-x4Up4AP8fKsaWkjmbUW5Xb3GJ6FDtpg&oe=650AD12D"
+  },
+  {
+    "id": 2,
+    "companyImage": "https://media.licdn.com/dms/image/C560BAQFjJGKFWZsmRA/company-logo_200_200/0/1588750293598?e=2147483647&v=beta&t=HabJMm4z0Orqexvl4dnAHXMWUg70e_IuHKq3Xg_STzI",
+    "jobTitle": "Full Stack Java Developer",
+    "companyName": "Unifi Afrca",
+    "companyLocation": "Stellenbosch, Western Cape, South Africa",
+    "jobType": "Hybrid",
+    "activelyRecruiting": true,
+    "postedDate": "1 week ago",
+    "isEasyApply": true,
+    "promoted": false,
+    "numberOfApplicants": 0,
+    "matchesProfile": false,
+    "userProfile": ""
+  }
+]
