@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "companyImage": "https://media.licdn.com/dms/image/C4D0BAQGzKTBKVA4rtQ/company-logo_200_200/0/1663684220307?e=2147483647&v=beta&t=07ib_hifOqKTU0SYhHjkJ8sfrL9wZyRrB8-Jqj7BTWA",
     "jobTitle": "Intermediate Web Developer",
     "companyName": "Salt",
@@ -11,15 +11,51 @@
     "isEasyApply": false,
     "promoted": false,
     "numberOfApplicants": 280,
+    "followers": 1000000,
+    "companyType": "Staffing and Recruiting",
+    "onSocialMediaHub": 191,
     "connectionWhoWorkHere": [
       {
-        "id": 1,
+        "id": "1",
         "connectionImage": "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80"
+      }
+    ],
+    "noOfAlumni": 15,
+    "employeeTotal": "201-500",
+    "recruiterDetails": [],
+    "jobDetails": [
+      {
+        "postedOn": "25 September 2023",
+        "startDate": "1 November 2023",
+        "closingDate": "31 December 2023",
+        "placeOfWork": "9 Freda Rd, Bromhof, Randburg, 2188",
+        "salaryRange": "R490 - R670k a year (negotiable)",
+        "responsibilities": [
+          {
+            "id": "1",
+            "responsibility": "Be responsible for the development and maintenance of software applications"
+          },
+          {
+            "id": "2",
+            "responsibility": "Contribute to the development of new features, fixing bugs and issues"
+          },
+          {
+            "id": "3",
+            "responsibility": "Make key contributions to the entire development lifecycle"
+          }
+        ],
+        "qualification": [
+          {
+            "id": "1",
+            "qualify": "AWS or Google cloud Platform Certificate"
+          }
+        ],
+        "companyDetails": "We're a leading global recruitment agency, specializing in digital talent and our mission is to create futures to make your life easier. Recruitment is the process of seeking out the very best person for a job and the very best job for a person. At Salt, not only do we strive for the best today, but to create the very best future for all in an ever-changing digital world."
       }
     ]
   },
   {
-    "id": 2,
+    "id": "2",
     "companyImage": "https://media.licdn.com/dms/image/C4D0BAQHaJUSMtMx4lQ/company-logo_200_200/0/1632116099001/nerospec_pty_ltd__logo?e=2147483647&v=beta&t=A3ScXuXKwybvpq2avjr4zIMSR5I55lxkIWDE7Tcl6s0",
     "jobTitle": "Firmware Engineer",
     "companyName": "Nerospec Group",
@@ -30,10 +66,60 @@
     "isEasyApply": true,
     "promoted": true,
     "numberOfApplicants": 48,
-    "connectionWhoWorkHere": []
+    "connectionWhoWorkHere": [],
+    "noOfAlumni": 8,
+    "employeeTotal": "200",
+    "followers": 5000,
+    "companyType": "Appliances, Electrical, and Electronics Manufacturing",
+    "onSocialMediaHub": 35,
+    "recruiterDetails": [
+      {
+        "id": "1",
+        "recruiterImage": "https://images.unsplash.com/photo-1581065178047-8ee15951ede6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1430&q=80",
+        "recruiterName": "Kayline Geduld",
+        "subscribed": "2nd",
+        "position": "Junior Human Resource",
+        "memberSince": "2021",
+        "mutualConnectionTotal": 4
+      }
+    ],
+    "jobDetails": [
+      {
+        "postedOn": "30 August 2023",
+        "startDate": "as soon as possible",
+        "closingDate": "31 December 2023",
+        "placeOfWork": "9 Freda Rd, Bromhof, Randburg, 2188",
+        "salaryRange": "R490 - R670k a year (negotiable)",
+        "responsibilities": [
+          {
+            "id": "1",
+            "responsibility": "Application Framework: Micronaut and Spring Boot"
+          },
+          {
+            "id": "2",
+            "responsibility": "Main Database: MySQL"
+          },
+          {
+            "id": "3",
+            "responsibility": "Programming Languages: Groovy, Java"
+          }
+        ],
+        "qualification": [
+          {
+            "id": "1",
+            "qualify": "10+ years of relevant development experience"
+          },
+          {
+            "id": "2",
+            "qualify": "Groovy and PHP experience is nice to have"
+          }
+        ],
+        "companyDetails": "We focus on providing quality and energy efficient products. We believe in building long lasting relationships with our clients to achieve the perfect solution for their requirements."
+      }
+    ]
   },
   {
-    "id": 3,
+    "id": "3",
     "companyImage": "https://media.licdn.com/dms/image/C4D0BAQGdaGBqW9sqkQ/company-logo_200_200/0/1660552313540?e=2147483647&v=beta&t=EZlRT4ed0jZt6kO5WjBuR7yqDj1uqbEZOYDF-x0RnvE",
     "jobTitle": "Full Stack Developer (With Front End) - Grow to Team Lead",
     "companyName": "DAV Professional Placement Group",
@@ -44,33 +130,133 @@
     "isEasyApply": true,
     "promoted": false,
     "numberOfApplicants": 0,
+    "followers": 67000,
+    "companyType": "Staffing and Recruiting",
+    "onSocialMediaHub": 56,
     "connectionWhoWorkHere": [
       {
-        "id": 1,
+        "id": "1",
         "connectionImage": "https://images.unsplash.com/photo-1582015752624-e8b1c75e3711?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
       },
       {
-        "id": 2,
+        "id": "2",
         "connectionImage": "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80"
       },
       {
-        "id": 3,
+        "id": "3",
         "connectionImage": "https://images.unsplash.com/photo-1534607287018-541c7d97748f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1325&q=80"
+      }
+    ],
+    "noOfAlumni": 23,
+    "employeeTotal": "68",
+    "recruiterDetails": [
+      {
+        "id": "1",
+        "recruiterImage": "https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        "recruiterName": "Jacob Van Der Merwe",
+        "subscribed": "1st",
+        "position": "Senior Human Resource",
+        "memberSince": "2019",
+        "mutualConnectionTotal": 26
+      }
+    ],
+    "jobDetails": [
+      {
+        "postedOn": "15 August 2023",
+        "startDate": "30 September 2023",
+        "closingDate": "31 December 2023",
+        "placeOfWork": "Ext 6, Adcorp Place, 102 Western Service Road (parallel to the M1 Gallo Manor, Woodlands, Sandton, 2191",
+        "salaryRange": "R75 - R960k per annum",
+        "responsibilities": [
+          {
+            "id": "1",
+            "responsibility": "Cloud Knowledge"
+          },
+          {
+            "id": "2",
+            "responsibility": "Azure/Google/AWS"
+          },
+          {
+            "id": "3",
+            "responsibility": "Agile and SCRUM methodologies"
+          }
+        ],
+        "qualification": [
+          {
+            "id": "1",
+            "qualify": "Qualification (degree/diploma) is a distinct advantage"
+          }
+        ],
+        "companyDetails": "International company within the Insurance Sector seeks an experience Full Stack Developer (with experience in the Front-End component). You will be involved in complex projects designed for Clients and working with internal customers. \n\nWe are looking for a Senior Full Stack Developer with excellent experience in software development and communication experience."
       }
     ]
   },
   {
-    "id": 4,
+    "id": "4",
     "companyImage": "https://media.licdn.com/dms/image/C4E0BAQFnsxIk5RSRdA/company-logo_200_200/0/1519856476194?e=2147483647&v=beta&t=3wRGZKZLWrRpZLImnUlMsZRemwp60hHk7z8Y9B0iVAY",
     "jobTitle": "Lead Javascript Developer",
     "companyName": "Pentasia",
     "companyLocation": "Durban, KwaZulu-Natal, South Africa",
     "jobType": "On-site",
     "activelyRecruiting": true,
-    "postedDate": "",
+    "postedDate": "14 September 2023",
     "isEasyApply": true,
     "promoted": true,
     "numberOfApplicants": 24,
-    "connectionWhoWorkHere": []
+    "connectionWhoWorkHere": [],
+    "noOfAlumni": 7,
+    "employeeTotal": "84",
+    "followers": 242000,
+    "companyType": "Staffing and Recruiting",
+    "onSocialMediaHub": 89,
+    "recruiterDetails": [
+      {
+        "id": "1",
+        "recruiterImage": "https://images.unsplash.com/photo-1627595359082-cc2b3487a40b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80",
+        "recruiterName": "Nonhlanhla Gumede",
+        "subscribed": "1st",
+        "position": "Intermediate Human Resource",
+        "memberSince": "2016",
+        "mutualConnectionTotal": 68
+      }
+    ],
+    "jobDetails": [
+      {
+        "postedOn": "25 August 2023",
+        "startDate": "30 September 2023",
+        "closingDate": "31 December 2023",
+        "placeOfWork": "Durban, KwaZulu-Natal, South Africa",
+        "salaryRange": "R60 - R120k per month",
+        "responsibilities": [
+          {
+            "id": "1",
+            "responsibility": "Dive deep into game frameworks"
+          },
+          {
+            "id": "2",
+            "responsibility": "Designing, developing, testing, and documenting software"
+          },
+          {
+            "id": "3",
+            "responsibility": "Mentor and support junior developers for their growth"
+          }
+        ],
+        "qualification": [
+          {
+            "id": "1",
+            "qualify": "5+ years software development experience"
+          },
+          {
+            "id": "2",
+            "qualify": "Strong proficiency in vanilla JavaScript"
+          },
+          {
+            "id": "3",
+            "qualify": "Effective leadership skills, including coaching and guidance"
+          }
+        ],
+        "companyDetails": "Inspiring careers in digital. Est. 2001, we're a specialist digital recruitment agency for leading iGaming and Payments brands. Hiring candidates across the skill spectrum.\n\nPentasia's clients include global online brands and emerging start-ups. With 20+ years in iGaming, our candidates lead many of the world’s most iconic brands: sportsbetting, casino, slots, poker, bingo and social gaming. As our reputation has grown, our client list now spans all specialisms within the digital sector, from eCommerce to digital media, software to analytics."
+      }
+    ]
   }
 ]

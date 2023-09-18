@@ -13,11 +13,11 @@ import {
   FontAwesome5,
   SimpleLineIcons,
 } from "@expo/vector-icons";
+import { Link } from "expo-router";
 
 //customs
 import { Post } from "../types";
 import { COLORS } from "../constants";
-import { Link } from "expo-router";
 
 //specify the prop type
 type PostListItemProps = {

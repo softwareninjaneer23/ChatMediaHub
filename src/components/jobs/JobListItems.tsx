@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {
+  Modal,
   Image,
   View,
   Text,
@@ -14,6 +15,11 @@ import {
   FontAwesome,
   MaterialIcons,
   MaterialCommunityIcons,
+  Feather,
+  SimpleLineIcons,
+  AntDesign,
+  Fontisto,
+  FontAwesome5,
 } from "@expo/vector-icons";
 
 //dummy data
@@ -31,9 +37,14 @@ import { COLORS } from "../../constants";
 
 export default function JobListItems() {
   //state handler
+  const [moreOptionModal, setMoreOptionModal] = useState(false);
   const [showAllRecentJobs, setShowAllRecentJobs] = useState(false);
   const [showAllRecommendedJobs, setShowAllRecommendedJobs] = useState(false);
   const [closeServices, setCloseServices] = useState(true);
+
+  const toggleMoreOptionModal = () => {
+    setMoreOptionModal(!moreOptionModal);
+  };
 
   //show more or less recent jobs
   const toggleShowAllRecentJobs = () => {
@@ -58,11 +69,133 @@ export default function JobListItems() {
 
         {/*drop down section*/}
         <View style={styles.dropDownContainer}>
-          <View style={styles.dropDownContent}>
+          <TouchableOpacity
+            onPress={toggleMoreOptionModal}
+            style={styles.dropDownContent}
+          >
             <Text style={styles.dropDownContentText}>More{"  "}</Text>
             <FontAwesome name="caret-down" size={18} color={COLORS.white} />
-          </View>
+          </TouchableOpacity>
         </View>
+
+        {/*more option*/}
+        <Modal
+          visible={moreOptionModal}
+          transparent={true}
+          animationType="slide"
+          style={styles.modalInnerContainer}
+        >
+          <View style={styles.modalInnerShareContent}>
+            <TouchableOpacity
+              onPress={toggleMoreOptionModal}
+              style={styles.modalActionContainer}
+            >
+              <AntDesign name="close" size={14} color={COLORS.white} />
+            </TouchableOpacity>
+
+            {/*modal options*/}
+            <View style={styles.modalOptionContainer}>
+              {/*modal items option*/}
+              <View style={styles.modalOptionContent}>
+                <View style={styles.modalOptionIconContent}>
+                  <FontAwesome name="bell" size={14} color={COLORS.white} />
+                </View>
+
+                <View style={styles.modalOptionTextContent}>
+                  <Text style={styles.modalOptionTextItem}>Job alerts</Text>
+                </View>
+              </View>
+
+              {/*modal items option*/}
+              <View style={styles.modalOptionContent}>
+                <View style={styles.modalOptionIconContent}>
+                  <Feather name="check" size={14} color={COLORS.white} />
+                </View>
+
+                <View style={styles.modalOptionTextContent}>
+                  <Text style={styles.modalOptionTextItem}>
+                    Demonstrate skills
+                  </Text>
+                </View>
+              </View>
+
+              {/*modal items option*/}
+              <View style={styles.modalOptionContent}>
+                <View style={styles.modalOptionIconContent}>
+                  <Fontisto
+                    name="prescription"
+                    size={14}
+                    color={COLORS.white}
+                  />
+                </View>
+
+                <View style={styles.modalOptionTextContent}>
+                  <Text style={styles.modalOptionTextItem}>Interview prep</Text>
+                </View>
+              </View>
+
+              {/*modal items option*/}
+              <View style={styles.modalOptionContent}>
+                <View style={styles.modalOptionIconContent}>
+                  <Ionicons
+                    name="md-document-sharp"
+                    size={14}
+                    color={COLORS.white}
+                  />
+                </View>
+
+                <View style={styles.modalOptionTextContent}>
+                  <Text style={styles.modalOptionTextItem}>Resume Builder</Text>
+                </View>
+              </View>
+
+              {/*modal items option*/}
+              <View style={styles.modalOptionContent}>
+                <View style={styles.modalOptionIconContent}>
+                  <FontAwesome
+                    name="youtube-play"
+                    size={14}
+                    color={COLORS.white}
+                  />
+                </View>
+
+                <View style={styles.modalOptionTextContent}>
+                  <Text style={styles.modalOptionTextItem}>
+                    Job seeker guidance
+                  </Text>
+                </View>
+              </View>
+
+              {/*modal items option*/}
+              <View style={styles.modalOptionContent}>
+                <View style={styles.modalOptionIconContent}>
+                  <FontAwesome5 name="cog" size={14} color={COLORS.white} />
+                </View>
+
+                <View style={styles.modalOptionTextContent}>
+                  <Text style={styles.modalOptionTextItem}>
+                    Application settings
+                  </Text>
+                </View>
+              </View>
+
+              <View style={styles.modalSeparator} />
+
+              {/*modal items option*/}
+              <View style={styles.modalOptionContent}>
+                <View style={styles.modalOptionIconContent}>
+                  <Feather name="edit" size={14} color={COLORS.white} />
+                </View>
+
+                <View style={styles.modalOptionTextContent}>
+                  <Text style={styles.modalOptionTextItem}>
+                    Post a free job
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </Modal>
       </View>
 
       {/*recent job searches section*/}
@@ -420,6 +553,60 @@ const styles = StyleSheet.create({
     color: COLORS.white,
     fontSize: 14,
     fontWeight: "400",
+  },
+
+  //modal section
+  modalInnerContainer: {
+    flexDirection: "column",
+  },
+  modalInnerShareContent: {
+    width: "48%",
+    height: Platform.OS === "ios" ? "25%" : "33%",
+    paddingVertical: 8,
+    paddingHorizontal: 10,
+    marginTop: Platform.OS === "ios" ? "25%" : "18%",
+    alignSelf: "flex-end",
+    borderWidth: 1,
+    borderRadius: 10,
+    borderColor: COLORS.darkGray,
+    backgroundColor: COLORS.black,
+  },
+  modalActionContainer: {
+    paddingHorizontal: 2,
+    justifyContent: "center",
+    alignItems: "flex-end",
+  },
+  modalOptionContainer: {
+    marginTop: 5,
+    flexDirection: "column",
+  },
+  modalOptionContent: {
+    width: "100%",
+    flexDirection: "row",
+    marginBottom: 10,
+  },
+  modalSeparator: {
+    width: "100%",
+    marginVertical: 5,
+    borderBottomColor: COLORS.darkGray,
+    borderBottomWidth: StyleSheet.hairlineWidth * 1.5,
+  },
+  modalOptionIconContent: {
+    width: "10%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  modalOptionTextContent: {
+    width: "88%",
+    marginLeft: 10,
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+  },
+  modalOptionTextItem: {
+    color: COLORS.white,
+    fontSize: 14,
+    fontWeight: "600",
+    opacity: 0.5,
   },
 
   //recent job section

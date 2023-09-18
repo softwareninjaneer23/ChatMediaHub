@@ -5,6 +5,7 @@ import {
   Ionicons,
   MaterialCommunityIcons,
 } from "@expo/vector-icons";
+import { Link } from "expo-router";
 
 //custom
 import { RecommendedJobList } from "../../types";
@@ -33,7 +34,9 @@ export default function RecommendedJobListItem({
           {/*job title section*/}
           <View style={styles.jobTitleContainer}>
             <View style={styles.jobTitleNameContainer}>
-              <Text style={styles.jobTitleNameText}>{recommend.jobTitle}</Text>
+              <Text style={styles.jobTitleNameText}>
+                <Link href={`/jobs/${recommend.id}`}>{recommend.jobTitle}</Link>
+              </Text>
             </View>
 
             <TouchableOpacity

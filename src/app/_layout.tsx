@@ -55,6 +55,7 @@ function RootLayoutNav() {
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="posts/[id]" options={{ title: "Read more" }} />
         <Stack.Screen name="users/[id]" options={{ title: "About user" }} />
+        <Stack.Screen name="jobs/[id]" options={{ title: "Job Details" }} />
         <Stack.Screen
           name="modal"
           options={{ presentation: "modal", title: "About Developer" }}

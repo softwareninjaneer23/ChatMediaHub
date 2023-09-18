@@ -48,7 +48,7 @@ export type RecentJobSearch = {
 };
 
 export type RecommendedJobList = {
-  id: number;
+  id: string;
   companyImage: string;
   jobTitle: string;
   companyName: string;
@@ -60,11 +60,49 @@ export type RecommendedJobList = {
   promoted: boolean;
   numberOfApplicants: number;
   connectionWhoWorkHere: ConnectionWhoWorkHere[];
+  noOfAlumni: number;
+  employeeTotal: string;
+  followers: number;
+  companyType: string;
+  onSocialMediaHub: number;
+  recruiterDetails: RecruiterDetails[];
+  jobDetails: JobDetails[];
 };
 
 export type ConnectionWhoWorkHere = {
-  id: number;
+  id: string;
   connectionImage: string;
+};
+
+export type RecruiterDetails = {
+  id: string;
+  recruiterImage: string;
+  recruiterName: string;
+  subscribed: string;
+  position: string;
+  memberSince: string;
+  mutualConnectionTotal: number;
+};
+
+export type JobDetails = {
+  postedOn: string;
+  startDate: string;
+  closingDate: string;
+  placeOfWork: string;
+  salaryRange: string;
+  responsibilities: JobResponsibilities[];
+  qualification: JobQualifications[];
+  companyDetails: string;
+};
+
+export type JobResponsibilities = {
+  id: string;
+  responsibility: string;
+};
+
+export type JobQualifications = {
+  id: string;
+  qualify: string;
 };
 
 export type PremiumJob = {

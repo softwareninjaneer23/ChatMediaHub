@@ -46,12 +46,10 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="jobs"
+        name="network"
         options={{
-          title: "Jobs",
-          tabBarIcon: ({ color }) => (
-            <TabBarIcon name="briefcase" color={color} />
-          ),
+          title: "My Network",
+          tabBarIcon: ({ color }) => <TabBarIcon name="users" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -92,10 +90,10 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="network"
+        name="notifications"
         options={{
-          title: "My Network",
-          tabBarIcon: ({ color }) => <TabBarIcon name="users" color={color} />,
+          title: "Notifications",
+          tabBarIcon: ({ color }) => <TabBarIcon name="bell" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -113,10 +111,12 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="notifications"
+        name="jobs"
         options={{
-          title: "Notifications",
-          tabBarIcon: ({ color }) => <TabBarIcon name="bell" color={color} />,
+          title: "Jobs",
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="briefcase" color={color} />
+          ),
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
