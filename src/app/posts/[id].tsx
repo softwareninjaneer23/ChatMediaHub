@@ -5,7 +5,7 @@ import { useLocalSearchParams } from "expo-router";
 //custom
 import posts from "../../../assets/data/posts.json";
 import PostListItem from "../../components/PostListItem";
-import LoadingComponent from "../../components/LoadingComponent";
+import LoadingComponent from "../../components/custom/LoadingComponent";
 
 export default function PostDetailsScreen() {
   const { id } = useLocalSearchParams();

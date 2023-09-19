@@ -1,22 +1,21 @@
 import { StyleSheet } from "react-native";
 import { Text, View } from "../../components/Themed";
 
+//custom
+import { COLORS } from "../../constants";
+import NotificationListItems from "../../components/notifications/NotificationListItems";
+
 export default function NotificationsScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Notifications</Text>
+    <View style={styles.notificationMainContainer}>
+      <NotificationListItems />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  notificationMainContainer: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
+    backgroundColor: COLORS.black,
   },
 });

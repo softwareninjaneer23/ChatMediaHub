@@ -131,3 +131,30 @@ export type PremiumJobList = {
   matchesProfile: boolean;
   userProfile: string;
 };
+
+export type NotificationList = {
+  id: string;
+  isVerified: boolean;
+  isNew: boolean;
+  isBusiness: boolean;
+  isUser: boolean;
+  isNewJob: boolean;
+  isOnline: boolean;
+  isLive: boolean;
+  isCurrentlyLive: boolean;
+  liveEnded: boolean;
+  isPoll: boolean;
+  isRepost: boolean;
+  liveVideo: string;
+  liveThumbnail: string;
+  liveTitle: string;
+  isCongrats: boolean;
+  position: string;
+  isFollow: boolean;
+  userImage: string;
+  userName: string;
+  notificationDescription: string;
+  notifyTime: string;
+  isMyPost: boolean;
+  mentioned: boolean;
+};

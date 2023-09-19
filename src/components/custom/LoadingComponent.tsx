@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 
 //customs
-import { COLORS, images } from "../constants";
+import { COLORS, images } from "../../constants";
 
 export default function LoadingComponent() {
   return (
