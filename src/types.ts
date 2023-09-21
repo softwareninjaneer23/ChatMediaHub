@@ -1,5 +1,6 @@
 //write all the prop types here...
 
+//home feed types
 export type Post = {
   id: string;
   content: string;
@@ -8,6 +9,7 @@ export type Post = {
   author: User;
 };
 
+//user account types
 export type User = {
   id: string;
   name: string;
@@ -39,6 +41,18 @@ export type Skills = {
   skill: string;
 };
 
+//my network types
+export type JobTitleList = {
+  id: number;
+  backImage: string;
+  userImage: string;
+  userName: string;
+  userPosition: string;
+  userCompany: string;
+  userMutualConnections: number;
+};
+
+//jobs types
 export type RecentJobSearch = {
   id: number;
   jobName: string;

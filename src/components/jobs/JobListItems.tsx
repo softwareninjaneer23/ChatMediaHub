@@ -16,7 +16,6 @@ import {
   MaterialIcons,
   MaterialCommunityIcons,
   Feather,
-  SimpleLineIcons,
   AntDesign,
   Fontisto,
   FontAwesome5,
