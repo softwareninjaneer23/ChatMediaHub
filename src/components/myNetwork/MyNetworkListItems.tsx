@@ -14,15 +14,36 @@ import { AntDesign, Ionicons } from "@expo/vector-icons";
 //dummy data
 import premiumData from "../../../assets/data/premiumData.json";
 import JobTitleData from "../../../assets/data/jobTitleData.json";
+import peopleYouMayKnowData from "../../../assets/data/peopleYouMayKnowData.json";
+import peopleYouMayKnowInYourLocationData from "../../../assets/data/peopleYouMayKnowInYourLocationData.json";
 
 //custom
 import PremiumJobSearchItem from "./PremiumJobSearchItem";
+import JobTitleListItems from "./JobTitleListItems";
+import PeopleYouMayKnowListItems from "./PeopleYouMayKnowListItems";
+import PeopleYouMayKnowInYourLocationListItems from "./PeopleYouMayKnowInYourLocationListItems";
 import { COLORS } from "../../constants";
 
 export default function MyNetworkListItems() {
   //state handlers
   const [personInvite, setPersonInvite] = useState(true);
   const [newsletterInvite, setNewsletterInvite] = useState(true);
+  const [showAllRecommendedUser, setShowAllRecommendedUser] = useState(false);
+  const [showAllSchoolUser, setShowAllSchoolUser] = useState(false);
+  const [showAllPeopleLocationUser, setShowAllPeopleLocationUser] =
+    useState(false);
+
+  const toggleShowAllRecommendedUser = () => {
+    setShowAllRecommendedUser(!showAllRecommendedUser);
+  };
+
+  const toggleShowAllSchoolUser = () => {
+    setShowAllSchoolUser(!showAllSchoolUser);
+  };
+
+  const toggleShowAllPeopleLocationUser = () => {
+    setShowAllPeopleLocationUser(!showAllPeopleLocationUser);
+  };
 
   return (
     <ScrollView
@@ -218,6 +239,117 @@ export default function MyNetworkListItems() {
         </View>
 
         {/*list section*/}
+        <View style={styles.similarJobTitleMainComponentContainer}>
+          {JobTitleData.slice(
+            0,
+            showAllRecommendedUser ? JobTitleData.length : 4
+          ).map((jobTitle) => (
+            <JobTitleListItems key={jobTitle.id} jobTitle={jobTitle} />
+          ))}
+        </View>
+
+        {/*see more recommended users*/}
+        <View style={styles.seeMoreRecommendedUserContainer}>
+          <TouchableOpacity
+            onPress={toggleShowAllRecommendedUser}
+            style={styles.seeMoreRecommendedUserContent}
+          >
+            <Text style={styles.seeMoreRecommendedUserTextItem}>
+              {showAllRecommendedUser ? "See less " : "See more "}
+            </Text>
+            <Ionicons
+              name={showAllRecommendedUser ? "chevron-up" : "chevron-down"}
+              size={16}
+              color={COLORS.lightBlue}
+              style={{ top: Platform.OS === "ios" ? 0 : 1 }}
+            />
+          </TouchableOpacity>
+        </View>
+      </View>
+
+      {/*people you may know suggestion section*/}
+      <View style={styles.similarJobTitleContainer}>
+        {/*header section*/}
+        <View style={styles.similarJobTitleHeaderContainer}>
+          <Text style={styles.similarJobTitleHeaderTextItem}>
+            People you may know from Damelin
+          </Text>
+        </View>
+
+        {/*list section*/}
+        <View style={styles.similarJobTitleMainComponentContainer}>
+          {peopleYouMayKnowData
+            .slice(0, showAllSchoolUser ? peopleYouMayKnowData.length : 4)
+            .map((peopleYouMayKnow) => (
+              <PeopleYouMayKnowListItems
+                key={peopleYouMayKnow.id}
+                peopleYouMayKnow={peopleYouMayKnow}
+              />
+            ))}
+        </View>
+
+        {/*see more recommended users*/}
+        <View style={styles.seeMoreRecommendedUserContainer}>
+          <TouchableOpacity
+            onPress={toggleShowAllSchoolUser}
+            style={styles.seeMoreRecommendedUserContent}
+          >
+            <Text style={styles.seeMoreRecommendedUserTextItem}>
+              {showAllSchoolUser ? "See less " : "See more "}
+            </Text>
+            <Ionicons
+              name={showAllSchoolUser ? "chevron-up" : "chevron-down"}
+              size={16}
+              color={COLORS.lightBlue}
+              style={{ top: Platform.OS === "ios" ? 0 : 1 }}
+            />
+          </TouchableOpacity>
+        </View>
+      </View>
+
+      {/*people you may know in your location suggestion section*/}
+      <View style={styles.similarJobTitleContainer}>
+        {/*header section*/}
+        <View style={styles.similarJobTitleHeaderContainer}>
+          <Text style={styles.similarJobTitleHeaderTextItem}>
+            People you may know in Johannesburg Metropolitan Area
+          </Text>
+        </View>
+
+        {/*list section*/}
+        <View style={styles.similarJobTitleMainComponentContainer}>
+          {peopleYouMayKnowInYourLocationData
+            .slice(
+              0,
+              showAllPeopleLocationUser
+                ? peopleYouMayKnowInYourLocationData.length
+                : 4
+            )
+            .map((peopleYouMayKnowInYourLocation) => (
+              <PeopleYouMayKnowInYourLocationListItems
+                key={peopleYouMayKnowInYourLocation.id}
+                peopleYouMayKnowInYourLocation={peopleYouMayKnowInYourLocation}
+              />
+            ))}
+        </View>
+
+        {/*see more recommended users*/}
+        <View style={styles.seeMoreRecommendedUserContainer}>
+          <TouchableOpacity
+            onPress={toggleShowAllPeopleLocationUser}
+            style={styles.seeMoreRecommendedUserContent}
+          >
+            <Text style={styles.seeMoreRecommendedUserTextItem}>
+              {showAllPeopleLocationUser ? "See less " : "See more "}
+            </Text>
+            <Ionicons
+              name={showAllPeopleLocationUser ? "chevron-up" : "chevron-down"}
+              size={16}
+              color={COLORS.lightBlue}
+              style={{ top: Platform.OS === "ios" ? 0 : 1 }}
+            />
+          </TouchableOpacity>
+        </View>
       </View>
     </ScrollView>
   );
@@ -329,10 +461,9 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
   },
   newsletterImageItem: {
-    width: 60,
-    height: 60,
+    width: 50,
+    height: 50,
     resizeMode: "cover",
-    borderRadius: 60,
   },
   newsletterIconContainer: {
     left: 33,
@@ -497,5 +628,26 @@ const styles = StyleSheet.create({
     color: COLORS.white,
     fontSize: 16,
     fontWeight: "400",
+  },
+  similarJobTitleMainComponentContainer: {
+    marginTop: 10,
+    flexDirection: "row",
+    flexWrap: "wrap",
+  },
+  seeMoreRecommendedUserContainer: {
+    marginTop: 10,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  seeMoreRecommendedUserContent: {
+    width: "35%",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  seeMoreRecommendedUserTextItem: {
+    color: COLORS.lightBlue,
+    fontSize: 14,
+    fontWeight: "600",
   },
 });

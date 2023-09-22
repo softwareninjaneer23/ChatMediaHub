@@ -11,105 +11,131 @@ import {
 import { Entypo, Ionicons } from "@expo/vector-icons";
 
 //custom
-import { JobTitleList } from "../../types";
+import { PeopleYouMayKnowInYourLocationList } from "../../types";
 import { COLORS, images } from "../../constants";
 
-type JobTitleListProps = {
-  jobTitle: JobTitleList;
+type PeopleYouMayKnowInYourLocationListProps = {
+  peopleYouMayKnowInYourLocation: PeopleYouMayKnowInYourLocationList;
 };
 
-export default function JobTitleListItems({ jobTitle }: JobTitleListProps) {
+export default function PeopleYouMayKnowInYourLocationListItems({
+  peopleYouMayKnowInYourLocation,
+}: PeopleYouMayKnowInYourLocationListProps) {
   const [connectWithUser, setConnectWithUser] = useState(false);
 
   return (
-    <View style={styles.jobTitleContainer}>
-      <View style={styles.jobTitleContentContainer}>
+    <View style={styles.peopleYouMayKnowContainer}>
+      <View style={styles.peopleYouMayKnowContentContainer}>
         {/*back image with icon*/}
         <ImageBackground
           source={
-            jobTitle.backImage ? { uri: jobTitle.backImage } : images.emptyImage
+            peopleYouMayKnowInYourLocation.backImage
+              ? { uri: peopleYouMayKnowInYourLocation.backImage }
+              : images.emptyImage
           }
-          style={styles.jobTitleBackContainer}
+          style={styles.peopleYouMayKnowBackContainer}
         >
           <TouchableOpacity
             onPress={() => console.log("close item")}
-            style={styles.jobTitleCloseContainer}
+            style={styles.peopleYouMayKnowCloseContainer}
           >
             <Ionicons
               name="md-close-sharp"
               size={Platform.OS === "ios" ? 24 : 18}
               color={COLORS.white}
-              style={styles.jobTitleActionIcon}
+              style={styles.peopleYouMayKnowActionIcon}
             />
           </TouchableOpacity>
         </ImageBackground>
 
         {/*user image*/}
-        <View style={styles.jobTitleUserImageContainer}>
-          {jobTitle.openToWork ? (
+        <View style={styles.peopleYouMayKnowUserImageContainer}>
+          {peopleYouMayKnowInYourLocation.openToWork ? (
             <ImageBackground
               source={{
                 uri: "https://media.licdn.com/dms/image/D5612AQEGgFogiOMtTw/article-cover_image-shrink_720_1280/0/1687102860396?e=2147483647&v=beta&t=uWIcQ2E30bBn8xoI4zqEy7F0Ha6uuhuzMoErkI8JuBw",
               }}
-              style={styles.jobTitleImageContainerItem}
+              style={styles.peopleYouMayKnowImageContainerItem}
             >
               <Image
-                source={{ uri: jobTitle.userImage }}
-                style={styles.jobTitleImageItem}
+                source={{ uri: peopleYouMayKnowInYourLocation.userImage }}
+                style={styles.peopleYouMayKnowImageItem}
               />
             </ImageBackground>
           ) : (
             <Image
-              source={{ uri: jobTitle.userImage }}
-              style={styles.jobTitleUserImageItem}
+              source={{ uri: peopleYouMayKnowInYourLocation.userImage }}
+              style={styles.peopleYouMayKnowUserImageItem}
             />
           )}
         </View>
 
         {/*user name section*/}
-        <View style={styles.jobTitleUserNameContainer}>
-          <Text numberOfLines={1} style={styles.jobTitleUserNameTextItem}>
-            {jobTitle.userName}
+        <View style={styles.peopleYouMayKnowUserNameContainer}>
+          <Text
+            numberOfLines={1}
+            style={styles.peopleYouMayKnowUserNameTextItem}
+          >
+            {peopleYouMayKnowInYourLocation.userName}
           </Text>
         </View>
 
         {/*user info section*/}
-        <View style={styles.jobTitleUserInfoContainer}>
-          <Text numberOfLines={2} style={styles.jobTitleUserDetailsTextItem}>
-            {jobTitle.userPosition} at{" "}
-            <Text style={styles.jobTitleUserDetailsTextItem}>
-              {jobTitle.userCompany}
+        <View style={styles.peopleYouMayKnowUserInfoContainer}>
+          <Text
+            numberOfLines={2}
+            style={styles.peopleYouMayKnowUserDetailsTextItem}
+          >
+            {peopleYouMayKnowInYourLocation.userPosition} at{" "}
+            <Text style={styles.peopleYouMayKnowUserDetailsTextItem}>
+              {peopleYouMayKnowInYourLocation.userCompany}
             </Text>
           </Text>
         </View>
 
         {/*user mutual section*/}
-        <View style={styles.jobTitleMutualContainer}>
-          <Entypo name="slideshare" size={18} color={COLORS.white} />
-          <Text style={styles.jobTitleMutualTextItem}>
-            {" "}
-            {jobTitle.userMutualConnections > 500
-              ? "500+"
-              : jobTitle.userMutualConnections}{" "}
-            mutual connections
-          </Text>
+        <View style={styles.peopleYouMayKnowMutualContainer}>
+          {peopleYouMayKnowInYourLocation.hasAJob ? (
+            <>
+              <Entypo name="slideshare" size={18} color={COLORS.white} />
+              <Text style={styles.peopleYouMayKnowMutualTextItem}>
+                {" "}
+                {peopleYouMayKnowInYourLocation.userMutualConnections > 500
+                  ? "500+"
+                  : peopleYouMayKnowInYourLocation.userMutualConnections}{" "}
+                mutual connections
+              </Text>
+            </>
+          ) : (
+            <>
+              <Image
+                source={{
+                  uri: "https://images.crunchbase.com/image/fetch/s--wuEAmLGW--/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/http://upload.wikimedia.org/wikipedia/en/9/94/Damelin_Logo.jpg",
+                }}
+                style={styles.peopleYouMayKnowImagePlaceholderItem}
+              />
+              <Text style={styles.peopleYouMayKnowMutualTextItem}>
+                {"  "}Damelin
+              </Text>
+            </>
+          )}
         </View>
 
         {/*user connect section*/}
-        <View style={styles.jobTitleConnectContainer}>
+        <View style={styles.peopleYouMayKnowConnectContainer}>
           <TouchableOpacity
             onPress={() => setConnectWithUser}
             style={
               connectWithUser
-                ? styles.jobTitlePendingContent
-                : styles.jobTitleConnectContent
+                ? styles.peopleYouMayKnowPendingContent
+                : styles.peopleYouMayKnowConnectContent
             }
           >
             <Text
               style={
                 connectWithUser
-                  ? styles.jobTitlePendingTextItem
-                  : styles.jobTitleConnectTextItem
+                  ? styles.peopleYouMayKnowPendingTextItem
+                  : styles.peopleYouMayKnowConnectTextItem
               }
             >
               {connectWithUser ? "Pending" : "Connect"}
@@ -122,11 +148,11 @@ export default function JobTitleListItems({ jobTitle }: JobTitleListProps) {
 }
 
 const styles = StyleSheet.create({
-  jobTitleContainer: {
+  peopleYouMayKnowContainer: {
     width: "50%",
     padding: 5,
   },
-  jobTitleContentContainer: {
+  peopleYouMayKnowContentContainer: {
     width: "100%",
     height: 300,
     paddingBottom: 5,
@@ -135,7 +161,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: COLORS.darkGray,
   },
-  jobTitleBackContainer: {
+  peopleYouMayKnowBackContainer: {
     width: "100%",
     height: 70,
     resizeMode: "stretch",
@@ -144,7 +170,7 @@ const styles = StyleSheet.create({
     borderTopRightRadius: Platform.OS === "ios" ? 10 : 9,
     overflow: "hidden",
   },
-  jobTitleCloseContainer: {
+  peopleYouMayKnowCloseContainer: {
     top: 6,
     width: Platform.OS === "ios" ? 30 : 20,
     height: Platform.OS === "ios" ? 30 : 20,
@@ -154,15 +180,15 @@ const styles = StyleSheet.create({
     borderRadius: Platform.OS === "ios" ? 30 : 20,
     backgroundColor: COLORS.darkGray,
   },
-  jobTitleActionIcon: {
+  peopleYouMayKnowActionIcon: {
     left: 1,
   },
-  jobTitleUserImageContainer: {
+  peopleYouMayKnowUserImageContainer: {
     marginTop: -50,
     justifyContent: "center",
     alignItems: "center",
   },
-  jobTitleImageContainerItem: {
+  peopleYouMayKnowImageContainerItem: {
     width: 110,
     height: 110,
     justifyContent: "center",
@@ -170,31 +196,31 @@ const styles = StyleSheet.create({
     borderRadius: 110,
     backgroundColor: COLORS.transparent,
   },
-  jobTitleImageItem: {
+  peopleYouMayKnowImageItem: {
     width: 78,
     height: 78,
     resizeMode: "cover",
     borderRadius: 78,
   },
-  jobTitleUserImageItem: {
+  peopleYouMayKnowUserImageItem: {
     width: 110,
     height: 110,
     borderRadius: 110,
     resizeMode: "cover",
   },
-  jobTitleUserNameContainer: {
+  peopleYouMayKnowUserNameContainer: {
     marginTop: 20,
     paddingHorizontal: 5,
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
   },
-  jobTitleUserNameTextItem: {
+  peopleYouMayKnowUserNameTextItem: {
     color: COLORS.white,
     fontSize: 16,
     fontWeight: "600",
   },
-  jobTitleUserInfoContainer: {
+  peopleYouMayKnowUserInfoContainer: {
     minHeight: 33,
     marginTop: 5,
     paddingHorizontal: 10,
@@ -202,32 +228,38 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  jobTitleUserDetailsTextItem: {
+  peopleYouMayKnowUserDetailsTextItem: {
     textAlign: "center",
     color: COLORS.white,
     fontSize: 14,
     fontWeight: "400",
     opacity: 0.5,
   },
-  jobTitleMutualContainer: {
+  peopleYouMayKnowMutualContainer: {
     height: 15,
     marginTop: 15,
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
   },
-  jobTitleMutualTextItem: {
+  peopleYouMayKnowMutualTextItem: {
     color: COLORS.white,
     fontSize: 12,
     fontWeight: "400",
     opacity: 0.5,
   },
-  jobTitleConnectContainer: {
+  peopleYouMayKnowImagePlaceholderItem: {
+    width: 20,
+    height: 20,
+    resizeMode: "cover",
+    borderRadius: 0,
+  },
+  peopleYouMayKnowConnectContainer: {
     width: "100%",
     marginTop: 15,
     paddingHorizontal: 15,
   },
-  jobTitleConnectContent: {
+  peopleYouMayKnowConnectContent: {
     justifyContent: "center",
     alignItems: "center",
     paddingVertical: 6,
@@ -235,12 +267,12 @@ const styles = StyleSheet.create({
     borderColor: COLORS.lightBlue,
     borderWidth: 1,
   },
-  jobTitleConnectTextItem: {
+  peopleYouMayKnowConnectTextItem: {
     color: COLORS.lightBlue,
     fontSize: 14,
     fontWeight: "600",
   },
-  jobTitlePendingContent: {
+  peopleYouMayKnowPendingContent: {
     justifyContent: "center",
     alignItems: "center",
     paddingVertical: 6,
@@ -248,7 +280,7 @@ const styles = StyleSheet.create({
     borderColor: COLORS.darkGray,
     borderWidth: 1,
   },
-  jobTitlePendingTextItem: {
+  peopleYouMayKnowPendingTextItem: {
     color: COLORS.darkGray,
     fontSize: 14,
     fontWeight: "600",

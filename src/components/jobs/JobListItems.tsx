@@ -32,7 +32,7 @@ import RecentJobsSearch from "./RecentJobsSearch";
 import RecommendedJobListItem from "./RecommendedJobListItem";
 import PremiumAccountItem from "./PremiumAccountItem";
 import PremiumJobListItem from "./PremiumJobListItem";
-import { COLORS } from "../../constants";
+import { COLORS, images } from "../../constants";
 
 export default function JobListItems() {
   //state handler
@@ -435,9 +435,7 @@ export default function JobListItems() {
               style={styles.safetyImageContainerItem}
             >
               <Image
-                source={{
-                  uri: "https://scontent-jnb1-1.xx.fbcdn.net/v/t39.30808-6/241160934_407333700735384_6753269422517740560_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=1b51e3&_nc_ohc=zDzQPY6dN6UAX-jKA1G&_nc_ht=scontent-jnb1-1.xx&oh=00_AfDndOo0h9TFFQ-x4Up4AP8fKsaWkjmbUW5Xb3GJ6FDtpg&oe=650AD12D",
-                }}
+                source={images.developer}
                 style={styles.safetyImageBottomItem}
               />
             </ImageBackground>

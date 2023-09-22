@@ -1,12 +1,14 @@
 [
   {
     "id": 1,
-    "backImage": "https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-    "userImage": "https://images.unsplash.com/photo-1514222709107-a180c68d72b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=898&q=80",
-    "userName": "Tshepo Moleba",
-    "userPosition": "Software Developer",
-    "userCompany": "Swift Developers",
-    "userMutualConnections": 23
+    "backImage": "",
+    "userImage": "https://images.unsplash.com/photo-1529701870190-9ae4010fd124?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1102&q=80",
+    "userName": "Andries Smith",
+    "userPosition": "Java Developer",
+    "userCompany": "Droppa",
+    "userMutualConnections": 1149,
+    "openToWork": true,
+    "hasAJob": true
   },
   {
     "id": 2,
@@ -15,16 +17,20 @@
     "userName": "Zinhle Khumalo",
     "userPosition": "Software Quality Engineer",
     "userCompany": "Nedbank",
-    "userMutualConnections": 41
+    "userMutualConnections": 141,
+    "openToWork": false,
+    "hasAJob": true
   },
   {
     "id": 3,
-    "backImage": "",
-    "userImage": "https://images.unsplash.com/photo-1529701870190-9ae4010fd124?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1102&q=80",
-    "userName": "Andries Smith",
-    "userPosition": "Java Developer",
-    "userCompany": "Droppa",
-    "userMutualConnections": 1149
+    "backImage": "https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "userImage": "https://images.unsplash.com/photo-1514222709107-a180c68d72b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=898&q=80",
+    "userName": "Tshepo Moleba",
+    "userPosition": "Software Developer",
+    "userCompany": "Swift Developers",
+    "userMutualConnections": 230,
+    "openToWork": false,
+    "hasAJob": true
   },
   {
     "id": 4,
@@ -33,7 +39,9 @@
     "userName": "Abigail Van Der Merwe",
     "userPosition": "Mobile Engineer (React Native)",
     "userCompany": "Maholla",
-    "userMutualConnections": 23
+    "userMutualConnections": 55,
+    "openToWork": false,
+    "hasAJob": true
   },
   {
     "id": 5,
@@ -42,7 +50,9 @@
     "userName": "Terek Janczik",
     "userPosition": "Web UI Designer & UX Developer",
     "userCompany": "Just Develop",
-    "userMutualConnections": 26
+    "userMutualConnections": 26,
+    "openToWork": false,
+    "hasAJob": true
   },
   {
     "id": 6,
@@ -50,8 +60,10 @@
     "userImage": "https://images.unsplash.com/photo-1578758803946-2c4f6738df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
     "userName": "Sifiso Moleba",
     "userPosition": "Software Engineer",
-    "userCompany": "Swift Developers",
-    "userMutualConnections": 23
+    "userCompany": "Freelancing",
+    "userMutualConnections": 23,
+    "openToWork": true,
+    "hasAJob": false
   },
   {
     "id": 7,
@@ -60,7 +72,9 @@
     "userName": "Paradise Kabemb",
     "userPosition": "Software Developer",
     "userCompany": "Absa",
-    "userMutualConnections": 100
+    "userMutualConnections": 100,
+    "openToWork": false,
+    "hasAJob": true
   },
   {
     "id": 8,
@@ -69,6 +83,8 @@
     "userName": "Nicole Meintjes",
     "userPosition": "Full-Stack Developer",
     "userCompany": "Singular Systems",
-    "userMutualConnections": 12
+    "userMutualConnections": 12,
+    "openToWork": false,
+    "hasAJob": true
   }
 ]

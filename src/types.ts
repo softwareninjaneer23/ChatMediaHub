@@ -50,6 +50,30 @@ export type JobTitleList = {
   userPosition: string;
   userCompany: string;
   userMutualConnections: number;
+  openToWork: boolean;
+  hasAJob: boolean;
+};
+export type PeopleYouMayKnowList = {
+  id: number;
+  backImage: string;
+  userImage: string;
+  userName: string;
+  userPosition: string;
+  userCompany: string;
+  userMutualConnections: number;
+  openToWork: boolean;
+  hasAJob: boolean;
+};
+export type PeopleYouMayKnowInYourLocationList = {
+  id: number;
+  backImage: string;
+  userImage: string;
+  userName: string;
+  userPosition: string;
+  userCompany: string;
+  userMutualConnections: number;
+  openToWork: boolean;
+  hasAJob: boolean;
 };
 
 //jobs types
