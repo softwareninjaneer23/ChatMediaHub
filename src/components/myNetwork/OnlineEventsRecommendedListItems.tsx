@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
 
   //top online event content
   onlineEventTopImageContent: {
-    height: Platform.OS === "ios" ? 190 : 200,
+    height: Platform.OS === "ios" ? 190 : 160,
     width: "100%",
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
@@ -266,7 +266,7 @@ const styles = StyleSheet.create({
   },
   onlineEventTextSectionContainer: {
     width: "85%",
-    left: 15,
+    left: Platform.OS === "ios" ? 10 : 15,
     justifyContent: "flex-start",
     alignItems: "center",
     flexDirection: "row",
