@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "backImage": "https://images.unsplash.com/photo-1616004655123-818cbd4b3143?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "groupImage": "https://cdn.vectorstock.com/i/preview-1x/34/05/data-structures-and-algorithms-blue-gradient-vector-42643405.jpg",
+    "groupName": "Data Structure and Algorithms",
+    "groupMembers": 109385
+  },
+  {
+    "id": 2,
+    "backImage": "https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=906&q=80",
+    "groupImage": "https://upload.wikimedia.org/wikipedia/commons/1/18/React_Native_Logo.png",
+    "groupName": "React Native",
+    "groupMembers": 268823
+  },
+  {
+    "id": 3,
+    "backImage": "https://images.unsplash.com/photo-1679639539537-0d2e452890f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80",
+    "groupImage": "https://static.vecteezy.com/system/resources/previews/011/332/798/original/artificial-intelligence-ai-logo-human-technology-human-digital-robot-tech-icon-design-template-free-vector.jpg",
+    "groupName": "Artificial Intelligence",
+    "groupMembers": 1308386
+  },
+  {
+    "id": 4,
+    "backImage": "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "groupImage": "https://i.pinimg.com/736x/c5/d5/24/c5d524050a24be0d275f4e3f3fe57f4d.jpg",
+    "groupName": "Web Development",
+    "groupMembers": 235000
+  },
+  {
+    "id": 5,
+    "backImage": "https://images.unsplash.com/photo-1579403124614-197f69d8187b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80",
+    "groupImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+    "groupName": "JavaScript Developers",
+    "groupMembers": 546392
+  },
+  {
+    "id": 6,
+    "backImage": "https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "groupImage": "https://logo.com/image-cdn/images/kts928pd/production/85af1c76f71f582e82910722f5796cf654678b9b-321x329.png?w=1080&q=72",
+    "groupName": "IT Professionals",
+    "groupMembers": 75833
+  },
+  {
+    "id": 7,
+    "backImage": "https://images.unsplash.com/photo-1573495612937-f01934eeaaa7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
+    "groupImage": "https://ih1.redbubble.net/image.691024790.7244/raf,360x360,075,t,fafafa:ca443f4786.jpg",
+    "groupName": "Software Engineers",
+    "groupMembers": 282802
+  },
+  {
+    "id": 8,
+    "backImage": "https://images.unsplash.com/photo-1624377632657-3902bfd35958?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "groupImage": "https://i.redd.it/rxezjyf4ojx41.png",
+    "groupName": "Python Developers",
+    "groupMembers": 604222
+  }
+]

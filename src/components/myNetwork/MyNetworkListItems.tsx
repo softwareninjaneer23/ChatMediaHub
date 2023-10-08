@@ -15,13 +15,19 @@ import { AntDesign, Ionicons } from "@expo/vector-icons";
 import premiumData from "../../../assets/data/premiumData.json";
 import JobTitleData from "../../../assets/data/jobTitleData.json";
 import peopleYouMayKnowData from "../../../assets/data/peopleYouMayKnowData.json";
+import groupsRecommendedData from "../../../assets/data/groupsRecommendedData.json";
 import peopleYouMayKnowInYourLocationData from "../../../assets/data/peopleYouMayKnowInYourLocationData.json";
+import peopleInYourCountryData from "../../../assets/data/peopleInYourCountryData.json";
+import onlineEventsData from "../../../assets/data/onlineEventsData.json";
 
 //custom
 import PremiumJobSearchItem from "./PremiumJobSearchItem";
 import JobTitleListItems from "./JobTitleListItems";
 import PeopleYouMayKnowListItems from "./PeopleYouMayKnowListItems";
+import GroupsYouMayLikeItems from "./GroupsYouMayLikeItems";
 import PeopleYouMayKnowInYourLocationListItems from "./PeopleYouMayKnowInYourLocationListItems";
+import PeopleWhoInYourCountryListItems from "./PeopleWhoInYourCountryListItems";
+import OnlineEventsRecommendedListItems from "./OnlineEventsRecommendedListItems";
 import { COLORS } from "../../constants";
 
 export default function MyNetworkListItems() {
@@ -30,9 +36,14 @@ export default function MyNetworkListItems() {
   const [newsletterInvite, setNewsletterInvite] = useState(true);
   const [showAllRecommendedUser, setShowAllRecommendedUser] = useState(false);
   const [showAllSchoolUser, setShowAllSchoolUser] = useState(false);
+  const [showAllRecommendedGroups, setShowAllRecommendedGroups] =
+    useState(false);
   const [showAllPeopleLocationUser, setShowAllPeopleLocationUser] =
     useState(false);
+  const [showAllLocationGroups, setShowAllLocationGroups] = useState(false);
+  const [showOnlineEvents, setShowOnlineEvent] = useState(false);
 
+  //data toggler function
   const toggleShowAllRecommendedUser = () => {
     setShowAllRecommendedUser(!showAllRecommendedUser);
   };
@@ -41,9 +52,24 @@ export default function MyNetworkListItems() {
     setShowAllSchoolUser(!showAllSchoolUser);
   };
 
+  const toggleShowAllRecommendedGroups = () => {
+    setShowAllRecommendedGroups(!showAllRecommendedGroups);
+  };
+
   const toggleShowAllPeopleLocationUser = () => {
     setShowAllPeopleLocationUser(!showAllPeopleLocationUser);
   };
+  const toggleShowAllLocationGroups = () => {
+    setShowAllLocationGroups(!showAllLocationGroups);
+  };
+  const toggleShowOnlineEvents = () => {
+    setShowOnlineEvent(!showOnlineEvents);
+  };
+
+  // Sort groupsRecommendedData based on group name in ascending order
+  const sortedGroups = groupsRecommendedData.slice().sort((a, b) => {
+    return a.groupName.localeCompare(b.groupName);
+  });
 
   return (
     <ScrollView
@@ -307,6 +333,46 @@ export default function MyNetworkListItems() {
         </View>
       </View>
 
+      {/*group suggestion section*/}
+      <View style={styles.similarJobTitleContainer}>
+        {/*header section*/}
+        <View style={styles.similarJobTitleHeaderContainer}>
+          <Text style={styles.similarJobTitleHeaderTextItem}>
+            Groups you may be interested in
+          </Text>
+        </View>
+
+        {/*list section*/}
+        <View style={styles.similarJobTitleMainComponentContainer}>
+          {sortedGroups
+            .slice(0, showAllRecommendedGroups ? sortedGroups.length : 4)
+            .map((groupsYouMayLike) => (
+              <GroupsYouMayLikeItems
+                key={groupsYouMayLike.id}
+                groupsYouMayLike={groupsYouMayLike}
+              />
+            ))}
+        </View>
+
+        {/*see more recommended users*/}
+        <View style={styles.seeMoreRecommendedUserContainer}>
+          <TouchableOpacity
+            onPress={toggleShowAllRecommendedGroups}
+            style={styles.seeMoreRecommendedUserContent}
+          >
+            <Text style={styles.seeMoreRecommendedUserTextItem}>
+              {showAllRecommendedGroups ? "See less " : "See more "}
+            </Text>
+            <Ionicons
+              name={showAllRecommendedGroups ? "chevron-up" : "chevron-down"}
+              size={16}
+              color={COLORS.lightBlue}
+              style={{ top: Platform.OS === "ios" ? 0 : 1 }}
+            />
+          </TouchableOpacity>
+        </View>
+      </View>
+
       {/*people you may know in your location suggestion section*/}
       <View style={styles.similarJobTitleContainer}>
         {/*header section*/}
@@ -344,6 +410,91 @@ export default function MyNetworkListItems() {
             </Text>
             <Ionicons
               name={showAllPeopleLocationUser ? "chevron-up" : "chevron-down"}
+              size={16}
+              color={COLORS.lightBlue}
+              style={{ top: Platform.OS === "ios" ? 0 : 1 }}
+            />
+          </TouchableOpacity>
+        </View>
+      </View>
+
+      {/*people you may know in your country suggestion section*/}
+      <View style={styles.similarJobTitleContainer}>
+        {/*header section*/}
+        <View style={styles.similarJobTitleHeaderContainer}>
+          <Text style={styles.similarJobTitleHeaderTextItem}>
+            People who are in{" "}
+            <Text style={{ fontWeight: "bold" }}>South Africa</Text> also follow
+            these people
+          </Text>
+        </View>
+
+        {/*list section*/}
+        <View style={styles.similarJobTitleMainComponentContainer}>
+          {peopleInYourCountryData
+            .slice(
+              0,
+              showAllLocationGroups ? peopleInYourCountryData.length : 2
+            )
+            .map((peopleCountryList) => (
+              <PeopleWhoInYourCountryListItems
+                key={peopleCountryList.id}
+                peopleCountryList={peopleCountryList}
+              />
+            ))}
+        </View>
+
+        {/*see more recommended users*/}
+        <View style={styles.seeMoreRecommendedUserContainer}>
+          <TouchableOpacity
+            onPress={toggleShowAllLocationGroups}
+            style={styles.seeMoreRecommendedUserContent}
+          >
+            <Text style={styles.seeMoreRecommendedUserTextItem}>
+              {showAllLocationGroups ? "See less " : "See more "}
+            </Text>
+            <Ionicons
+              name={showAllLocationGroups ? "chevron-up" : "chevron-down"}
+              size={16}
+              color={COLORS.lightBlue}
+              style={{ top: Platform.OS === "ios" ? 0 : 1 }}
+            />
+          </TouchableOpacity>
+        </View>
+      </View>
+
+      {/*people you may know in your country suggestion section*/}
+      <View style={styles.similarJobTitleContainer}>
+        {/*header section*/}
+        <View style={styles.similarJobTitleHeaderContainer}>
+          <Text style={styles.similarJobTitleHeaderTextItem}>
+            Online events for you
+          </Text>
+        </View>
+
+        {/*list section*/}
+        <View style={styles.similarJobTitleMainComponentContainer}>
+          {onlineEventsData
+            .slice(0, showOnlineEvents ? onlineEventsData.length : 2)
+            .map((onlineEventsList) => (
+              <OnlineEventsRecommendedListItems
+                key={onlineEventsList.id}
+                onlineEventsList={onlineEventsList}
+              />
+            ))}
+        </View>
+
+        {/*see more recommended users*/}
+        <View style={styles.seeMoreRecommendedUserContainer}>
+          <TouchableOpacity
+            onPress={toggleShowOnlineEvents}
+            style={styles.seeMoreRecommendedUserContent}
+          >
+            <Text style={styles.seeMoreRecommendedUserTextItem}>
+              {showOnlineEvents ? "See less " : "See more "}
+            </Text>
+            <Ionicons
+              name={showOnlineEvents ? "chevron-up" : "chevron-down"}
               size={16}
               color={COLORS.lightBlue}
               style={{ top: Platform.OS === "ios" ? 0 : 1 }}

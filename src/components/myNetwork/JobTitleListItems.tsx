@@ -98,7 +98,7 @@ export default function JobTitleListItems({ jobTitle }: JobTitleListProps) {
         {/*user connect section*/}
         <View style={styles.jobTitleConnectContainer}>
           <TouchableOpacity
-            onPress={() => setConnectWithUser}
+            onPress={() => setConnectWithUser(true)}
             style={
               connectWithUser
                 ? styles.jobTitlePendingContent

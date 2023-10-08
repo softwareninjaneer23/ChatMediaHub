@@ -75,6 +75,13 @@ export type PeopleYouMayKnowInYourLocationList = {
   openToWork: boolean;
   hasAJob: boolean;
 };
+export type GroupsYouMayLikeList = {
+  id: number;
+  backImage: string;
+  groupImage: string;
+  groupName: string;
+  groupMembers: number;
+};
 
 //jobs types
 export type RecentJobSearch = {
@@ -195,4 +202,36 @@ export type NotificationList = {
   notifyTime: string;
   isMyPost: boolean;
   mentioned: boolean;
+};
+
+export type PeopleCountryList = {
+  id: string;
+  userProfilePicture: string;
+  userCoverImage: string;
+  userName: string;
+  userBio: string;
+  userDescription: string;
+  followers: CountryPeopleFollowers[];
+};
+
+export type CountryPeopleFollowers = {
+  id: string;
+  userName: string;
+  userPicture: string;
+};
+
+export type OnlineEventsList = {
+  id: string;
+  eventImage: string;
+  eventName: string;
+  eventStartDate: string;
+  eventEndDate: string;
+  eventAttendees: number;
+  eventConnectionAttendees: EventAttendeesConnection[];
+};
+
+export type EventAttendeesConnection = {
+  id: string;
+  userName: string;
+  userPicture: string;
 };

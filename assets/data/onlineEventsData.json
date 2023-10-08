@@ -1,0 +1,121 @@
+[
+  {
+    "id": "1",
+    "eventImage": "https://erlebe-software.de/files/2018/01/39-og.png",
+    "eventName": "SAP S/4HANA Product Expert Training",
+    "eventStartDate": "Tue, Sep 19",
+    "eventEndDate": "Fri, Sep 29",
+    "eventAttendees": 391,
+    "eventConnectionAttendees": [
+      {
+        "id": "1",
+        "userName": "John Vliesman",
+        "userPicture": "https://images.unsplash.com/photo-1521053432093-b5d85e9f0946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=986&q=80"
+      },
+      {
+        "id": "2",
+        "userName": "Simon Baardman",
+        "userPicture": "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+      },
+      {
+        "id": "3",
+        "userName": "Gift Masina",
+        "userPicture": "https://images.unsplash.com/photo-1506634572416-48cdfe530110?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=985&q=80"
+      },
+      {
+        "id": "4",
+        "userName": "Neo Dibe",
+        "userPicture": "https://images.unsplash.com/photo-1434510423563-c7e99bbc5bbd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
+      },
+      {
+        "id": "5",
+        "userName": "Andile Mtlowong",
+        "userPicture": "https://images.unsplash.com/photo-1493704099487-36e3c0412f6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1154&q=80"
+      },
+      {
+        "id": "6",
+        "userName": "Thabang Nkunyane",
+        "userPicture": "https://images.unsplash.com/photo-1472711649025-510d7c09a6fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1181&q=80"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "eventImage": "https://miro.medium.com/v2/resize:fit:1400/1*c_fiB-YgbnMl6nntYGBMHQ.jpeg",
+    "eventName": "Machine Learning Expert Training",
+    "eventStartDate": "Tue, Sep 19",
+    "eventEndDate": "Fri, Sep 29",
+    "eventAttendees": 203,
+    "eventConnectionAttendees": []
+  },
+  {
+    "id": "3",
+    "eventImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS65-EcAj_h6xJbhPZZZHkTQnc_b7VuHVV_hg&usqp=CAU",
+    "eventName": "Web Development Principles Summit",
+    "eventStartDate": "Tue, Sep 19",
+    "eventEndDate": "Fri, Sep 29",
+    "eventAttendees": 282,
+    "eventConnectionAttendees": [
+      {
+        "id": "1",
+        "userName": "Lisa Van Rensburg",
+        "userPicture": "https://images.unsplash.com/photo-1489667897015-bf7a9e45c284?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80"
+      },
+      {
+        "id": "2",
+        "userName": "Boitumelo Khumalo",
+        "userPicture": "https://images.unsplash.com/photo-1508418717103-8b56bcf03360?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+      },
+      {
+        "id": "3",
+        "userName": "Hillary Smith",
+        "userPicture": "https://images.unsplash.com/photo-1523830292954-00077647ca4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80"
+      },
+      {
+        "id": "4",
+        "userName": "Agung Zing",
+        "userPicture": "https://images.unsplash.com/photo-1521183142708-ee6392033c3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80"
+      },
+      {
+        "id": "5",
+        "userName": "Luu Wong",
+        "userPicture": "https://images.unsplash.com/photo-1543248306-9947ca7494aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1031&q=80"
+      },
+      {
+        "id": "6",
+        "userName": "Nikkita Naidoo",
+        "userPicture": "https://images.unsplash.com/photo-1560467916-4171c7308ebe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "eventImage": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F594143919%2F182742595023%2F1%2Foriginal.20230909-205820?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1640%2C820&s=1c1d71a2b1622689978a17d66e7a4a80",
+    "eventName": "Business Analysis",
+    "eventStartDate": "Tue, Sep 19",
+    "eventEndDate": "Fri, Sep 29",
+    "eventAttendees": 391,
+    "eventConnectionAttendees": [
+      {
+        "id": "1",
+        "userName": "Enicah Mokhele",
+        "userPicture": "https://images.unsplash.com/photo-1592504687638-dd04d8491a84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
+      },
+      {
+        "id": "2",
+        "userName": "Louis Van Der Merwe",
+        "userPicture": "https://images.unsplash.com/photo-1618928370716-8e76879c1d46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
+      },
+      {
+        "id": "3",
+        "userName": "Mzwakhe Mhlongo",
+        "userPicture": "https://images.unsplash.com/photo-1515205396030-348ce8a426cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      },
+      {
+        "id": "4",
+        "userName": "Sikizo Makgetha",
+        "userPicture": "https://images.unsplash.com/photo-1516907813517-981b8c389aa2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=986&q=80"
+      }
+    ]
+  }
+]

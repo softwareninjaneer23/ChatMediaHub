@@ -124,7 +124,7 @@ export default function PeopleYouMayKnowListItems({
         {/*user connect section*/}
         <View style={styles.peopleYouMayKnowConnectContainer}>
           <TouchableOpacity
-            onPress={() => setConnectWithUser}
+            onPress={() => setConnectWithUser(true)}
             style={
               connectWithUser
                 ? styles.peopleYouMayKnowPendingContent

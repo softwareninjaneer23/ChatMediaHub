@@ -1,0 +1,97 @@
+[
+  {
+    "id": "1",
+    "userProfilePicture": "https://images.unsplash.com/photo-1613382627941-be13d61c38ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+    "userCoverImage": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "userName": "Christopher Van Rensburg",
+    "userBio": "Just Your Friendly Cloud Accounting Specialist | Visionary Leader 💡 | Guest Speaker & Mentor",
+    "userDescription": "Talks about #bibleverse, #faithbased, #biblequotes, #spiritualgrowth, and #motivationalquote",
+    "followers": [
+      {
+        "id": "1",
+        "userName": "Linda",
+        "userPicture": "https://images.unsplash.com/photo-1529323871863-75303b5737ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
+      },
+      {
+        "id": "2",
+        "userName": "Simphiwe",
+        "userPicture": "https://images.unsplash.com/photo-1541216970279-affbfdd55aa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
+      },
+      {
+        "id": "3",
+        "userName": "Kevin",
+        "userPicture": "https://images.unsplash.com/photo-1542345812-d98b5cd6cf98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
+      },
+      {
+        "id": "4",
+        "userName": "Sifiso",
+        "userPicture": "https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "userProfilePicture": "https://images.unsplash.com/photo-1514136649217-b627b4b9cfb2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80",
+    "userCoverImage": "https://images.unsplash.com/photo-1600138336992-d9fcd4280aa5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "userName": "Victoria Smith",
+    "userBio": "Vice Chancellor & Principal at University of Johannesburg",
+    "userDescription": "Talks about #flaw, #leadership, #socialsecurity, #highereducation, and #teachingandlearning",
+    "followers": [
+      {
+        "id": "1",
+        "userName": "Thembi",
+        "userPicture": "https://images.unsplash.com/photo-1511945863317-d60e146e9016?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1155&q=80"
+      },
+      {
+        "id": "2",
+        "userName": "Elizabeth",
+        "userPicture": "https://images.unsplash.com/photo-1522390108011-5f8667fd551d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
+      },
+      {
+        "id": "3",
+        "userName": "Thando",
+        "userPicture": "https://images.unsplash.com/photo-1523297736436-356615162cc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "userProfilePicture": "https://images.unsplash.com/photo-1597204081767-4c14a6b7cbec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+    "userCoverImage": "https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "userName": "Myran Govender",
+    "userBio": "CEO at Mfundo Funding Association",
+    "userDescription": "Talks about #entrepreneurship, #leadership, #empowerment, #business, and #goals",
+    "followers": [
+      {
+        "id": "1",
+        "userName": "Rayan",
+        "userPicture": "https://images.unsplash.com/photo-1480429370139-e0132c086e2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80"
+      },
+      {
+        "id": "2",
+        "userName": "Leona",
+        "userPicture": "https://images.unsplash.com/photo-1536331307320-5316320e97cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1044&q=80"
+      },
+      {
+        "id": "3",
+        "userName": "Sabelo",
+        "userPicture": "https://images.unsplash.com/photo-1464750329548-977f9793ca3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      },
+      {
+        "id": "4",
+        "userName": "Kevin",
+        "userPicture": "https://images.unsplash.com/photo-1521165946603-4019d13d7d46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
+      },
+      {
+        "id": "5",
+        "userName": "Lisa",
+        "userPicture": "https://images.unsplash.com/photo-1523261094290-5d7f30fc30b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
+      },
+      {
+        "id": "2",
+        "userName": "James",
+        "userPicture": "https://images.unsplash.com/photo-1562004760-aceed7bb0fe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80"
+      }
+    ]
+  }
+]

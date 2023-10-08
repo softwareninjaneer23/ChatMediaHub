@@ -110,12 +110,12 @@ export default function PeopleYouMayKnowInYourLocationListItems({
             <>
               <Image
                 source={{
-                  uri: "https://images.crunchbase.com/image/fetch/s--wuEAmLGW--/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/http://upload.wikimedia.org/wikipedia/en/9/94/Damelin_Logo.jpg",
+                  uri: "https://upload.wikimedia.org/wikipedia/commons/4/42/University_of_south_africa_logo.jpg?20190105091427",
                 }}
                 style={styles.peopleYouMayKnowImagePlaceholderItem}
               />
               <Text style={styles.peopleYouMayKnowMutualTextItem}>
-                {"  "}Damelin
+                {"  "}University of South Africa
               </Text>
             </>
           )}
@@ -124,7 +124,7 @@ export default function PeopleYouMayKnowInYourLocationListItems({
         {/*user connect section*/}
         <View style={styles.peopleYouMayKnowConnectContainer}>
           <TouchableOpacity
-            onPress={() => setConnectWithUser}
+            onPress={() => setConnectWithUser(true)}
             style={
               connectWithUser
                 ? styles.peopleYouMayKnowPendingContent
