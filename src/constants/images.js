@@ -7,6 +7,12 @@ const developer = require("../../assets/images/developer/developer.jpg");
 const emptyImage = require("../../assets/images/developer/empty.jpeg");
 const loading = require("../../assets/images/loading/loading.gif");
 
+//reactions
+const love = "https://www.userflow.nl/images/Linkedin-Love-Icon-Heart500.png";
+const celebrate = "https://www.userflow.nl/images/Linkedin-Celebrate-Icon-ClappingHands500.png";
+const insightful = "https://www.userflow.nl/images/Linkedin-Insightful-Icon-Lamp250.png";
+const like = "https://www.userflow.nl/images/Linkedin-Like-Icon-Thumbup500.png";
+
 export default {
   logoBlack,
   logoColor,
@@ -15,4 +21,8 @@ export default {
   developer,
   emptyImage,
   loading,
+  love,
+  celebrate,
+  insightful,
+  like
 };

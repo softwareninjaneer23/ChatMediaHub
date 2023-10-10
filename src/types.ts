@@ -5,8 +5,43 @@ export type Post = {
   id: string;
   content: string;
   image?: string; // string or missing
-  likes: number;
+  likes: Likes[];
+  repost: number;
   author: User;
+  comments: Comments[];
+};
+
+export type Likes = {
+  id: string;
+  userImage: string;
+  likeType: string;
+};
+
+export type Comments = {
+  commentId: string;
+  subscribed: string;
+  position: string;
+  commentDate: string;
+  userName: string;
+  userImage: string;
+  userComment: string;
+  commentLikes: CommentLikes[];
+  nestedComment: NestedComment[];
+};
+
+export type NestedComment = {
+  commentId: string;
+  subscribed: string;
+  position: string;
+  commentDate: string;
+  userName: string;
+  userImage: string;
+  userComment: string;
+};
+
+export type CommentLikes = {
+  likeId: string;
+  likeType: string;
 };
 
 //user account types
@@ -14,7 +49,7 @@ export type User = {
   id: string;
   name: string;
   position: string;
-  image?: string; // string or missing
+  image?: string;
   subscribed: string;
   backImage?: string;
   connections: number;

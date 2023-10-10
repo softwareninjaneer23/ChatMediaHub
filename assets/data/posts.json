@@ -1,20 +1,185 @@
 [
   {
-    "id": "2",
+    "id": "1",
     "author": {
       "id": "u2",
       "subscribed": "1st",
       "name": "Neo Mokhele",
       "position": "Founder at Chat Media Hub",
-      "image": "https://scontent-jnb1-1.xx.fbcdn.net/v/t39.30808-6/241160934_407333700735384_6753269422517740560_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=1b51e3&_nc_ohc=zDzQPY6dN6UAX-jKA1G&_nc_ht=scontent-jnb1-1.xx&oh=00_AfDndOo0h9TFFQ-x4Up4AP8fKsaWkjmbUW5Xb3GJ6FDtpg&oe=650AD12D"
+      "image": "https://media.licdn.com/dms/image/C5603AQFHIXLWOtfswQ/profile-displayphoto-shrink_400_400/0/1645002356456?e=1701907200&v=beta&t=CJPEusdm3m_c5HxQ3Fii9lb3h2M3ClJZ9ODpmTxjbWU"
     },
     "content": "With the Chat Media Hub, we can now manage all our social media accounts from one convenient dashboard. This means more efficient posting, monitoring, and engagement across platforms. We're taking data-driven decision-making to the next level. The hub provides real-time analytics and performance metrics, allowing us to fine-tune our social media strategy for better results. Our teams can now collaborate seamlessly on content creation, scheduling, and campaigns. This fosters creativity, ensures consistency, and maximizes the impact of our social media efforts. We value your input and feedback! Our Social Media Hub will help us stay even more connected with our incredible community. We're looking forward to more meaningful interactions and conversations.",
     "image": "https://www.weblineindia.com/wp-content/uploads/2019/01/react-native-build-mobile-apps-with-increased-developer-productivity.gif",
-    "likes": 670,
-    "comments": []
+    "likes": [
+      {
+        "id": "1",
+        "userImage": "https://images.unsplash.com/photo-1539800925050-60b19309954e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1015&q=80",
+        "likeType": "like"
+      },
+      {
+        "id": "2",
+        "userImage": "https://images.unsplash.com/photo-1610575528294-97e56df074f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "3",
+        "userImage": "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "insightful"
+      },
+      {
+        "id": "4",
+        "userImage": "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "celebrate"
+      },
+      {
+        "id": "5",
+        "userImage": "https://images.unsplash.com/photo-1621786032758-112a390cb7ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "like"
+      },
+      {
+        "id": "6",
+        "userImage": "https://images.unsplash.com/photo-1594647210801-5124307f3d51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "7",
+        "userImage": "https://images.unsplash.com/photo-1620794108219-aedbaded4eea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "insightful"
+      },
+      {
+        "id": "8",
+        "userImage": "https://images.unsplash.com/photo-1553457055-88e354f1257c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "like"
+      }
+    ],
+    "comments": [
+      {
+        "commentId": "1",
+        "subscribed": "3rd",
+        "position": "Student, Affiliate marketer, Writer, Author",
+        "commentDate": "30mins",
+        "userName": "Abigail Franklin",
+        "userImage": "https://images.unsplash.com/photo-1555622169-c466110c27ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=986&q=80",
+        "userComment": "This Chat Media Hub sounds like a game-changer! Having all our social media accounts in one place will definitely save time and streamline our efforts. Excited to see the real-time analytics in action! As a content creator, I'm thrilled about the collaboration features. This will make it so much easier to plan and execute campaigns. Can't wait to get creative!",
+        "commentLikes": [
+          {
+            "likeId": "1",
+            "likeType": "like"
+          },
+          {
+            "likeId": "2",
+            "likeType": "love"
+          },
+          {
+            "likeId": "3",
+            "likeType": "celebrate"
+          },
+          {
+            "likeId": "4",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "5",
+            "likeType": "love"
+          }
+        ],
+        "nestedComment": [
+          {
+            "commentId": "1",
+            "subscribed": "2nd",
+            "position": "CEO & Founder at Lele Markets",
+            "commentDate": "5mins",
+            "userName": "Lele Mhlono",
+            "userImage": "https://images.unsplash.com/flagged/photo-1558990397-489e8f26f88c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=942&q=80",
+            "userComment": "Wow, the Chat Media Hub seems like a game-changer indeed! Consolidating all of our social media accounts into one platform promises to save us valuable time and simplify our efforts. I'm particularly eager to witness the real-time analytics in action, as it'll provide essential insights for optimizing our strategies. As a content creator, I'm thrilled about the collaboration features; they'll make planning and executing campaigns a breeze. I can't wait to dive in and get creative with this tool"
+          }
+        ]
+      },
+      {
+        "commentId": "2",
+        "subscribed": "1st",
+        "position": "Senior Developer at Workaholics Dev",
+        "commentDate": "1w",
+        "userName": "Josh Millier",
+        "userImage": "https://images.unsplash.com/photo-1537579158157-6643e49b488f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1017&q=80",
+        "userComment": "Wow, this is exactly what we needed! Managing social media can be overwhelming, and this hub seems like the solution. Looking forward to collaborating more effectively with the team.",
+        "commentLikes": [
+          {
+            "likeId": "1",
+            "likeType": "like"
+          },
+          {
+            "likeId": "2",
+            "likeType": "love"
+          },
+          {
+            "likeId": "3",
+            "likeType": "like"
+          },
+          {
+            "likeId": "4",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "5",
+            "likeType": "love"
+          },
+          {
+            "likeId": "6",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "7",
+            "likeType": "like"
+          },
+          {
+            "likeId": "8",
+            "likeType": "love"
+          },
+          {
+            "likeId": "9",
+            "likeType": "like"
+          },
+          {
+            "likeId": "10",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "11",
+            "likeType": "love"
+          },
+          {
+            "likeId": "12",
+            "likeType": "insightful"
+          }
+        ],
+        "nestedComment": []
+      },
+      {
+        "commentId": "3",
+        "subscribed": "2nd",
+        "position": "Frontend Mobile Developer at Liberty",
+        "commentDate": "2w",
+        "userName": "Linda Sibanyoni",
+        "userImage": "https://images.unsplash.com/photo-1557448115-3e19aa26e3b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=986&q=80",
+        "userComment": "Data-driven decision-making is the way to go! Real-time analytics will provide valuable insights for optimizing our strategy. Exciting times ahead! This hub is a game-changer for engagement. I see it as a great opportunity to connect even more deeply with our community. Let's make those interactions count!",
+        "commentLikes": [
+          {
+            "likeId": "1",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "2",
+            "likeType": "insightful"
+          }
+        ],
+        "nestedComment": []
+      }
+    ],
+    "repost": 129
   },
   {
-    "id": "stepzen",
+    "id": "2",
     "author": {
       "id": "u2",
       "subscribed": "1st",
@@ -24,11 +189,12 @@
     },
     "content": "A federated GraphQL API (supergraph) brings together different services (subgraphs) into one unified API endpoint. Whether your subgraphs are built with StepZen or with another library or technology, you can assemble them into a federated graph using StepZen.",
     "image": "https://camo.githubusercontent.com/2fef49c67f8e76db9e0f97b96c7f756b72d7fc1f299d0489ee016ccb911a891a/68747470733a2f2f737465707a656e2e636f6d2f696d616765732f737465707a656e2d737469636b6572732e706e67",
-    "likes": 348,
-    "comments": []
+    "likes": [],
+    "comments": [],
+    "repost": 1
   },
   {
-    "id": "1",
+    "id": "3",
     "author": {
       "id": "u1",
       "subscribed": "2nd",
@@ -38,28 +204,110 @@
     },
     "content": "Architecture reflects the culture, history, and aspirations of a society. From the towering skyscrapers of modern cities to the ancient temples that stand as testaments to bygone eras, each architectural marvel tells a unique story. Architects are the visionaries who push the boundaries of creativity. They seamlessly blend form and function, creating structures that not only serve practical purposes but also elevate our spirits with their beauty and ingenuity.",
     "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-    "likes": 254,
-    "comments": [
+    "likes": [
       {
-        "user": {
-          "name": "Elon Musk",
-          "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/elon.png"
-        },
-        "comment": "Insightful read.",
-        "timestamp": "2023-07-16T17:15:00Z"
+        "id": "1",
+        "userImage": "https://images.unsplash.com/photo-1493752603190-08d8b5d1781d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80",
+        "likeType": "love"
       },
       {
-        "user": {
-          "name": "Peter Johnson",
-          "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/11.png"
-        },
-        "comment": "Thank you for sharing!",
-        "timestamp": "2023-07-16T18:00:00Z"
+        "id": "2",
+        "userImage": "https://images.unsplash.com/photo-1523465712050-26a46c93f772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "3",
+        "userImage": "https://images.unsplash.com/photo-1612970385644-3780728d9ad2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "insightful"
+      },
+      {
+        "id": "4",
+        "userImage": "https://images.unsplash.com/photo-1582771415755-5d373717fcb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "like"
       }
-    ]
+    ],
+    "comments": [
+      {
+        "commentId": "1",
+        "subscribed": "2nd",
+        "position": "Make-up Artist at Bomb Production",
+        "commentDate": "25mins",
+        "userName": "Faith Nketsi",
+        "userImage": "https://images.unsplash.com/photo-1594465919760-441fe5908ab0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80",
+        "userComment": "Absolutely! Architecture is a beautiful blend of art and engineering. It's incredible how architects shape our world and leave a mark on history.",
+        "commentLikes": [],
+        "nestedComment": []
+      },
+      {
+        "commentId": "2",
+        "subscribed": "1st",
+        "position": "Architect at House & Home",
+        "commentDate": "3d",
+        "userName": "Stephan Kruger",
+        "userImage": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "userComment": "Architects are true artists. Their ability to balance aesthetics and functionality is awe-inspiring. I appreciate their dedication to creating spaces that inspire.",
+        "commentLikes": [],
+        "nestedComment": []
+      },
+      {
+        "commentId": "3",
+        "subscribed": "1st",
+        "position": "Data Administrator at Nedbank",
+        "commentDate": "1w",
+        "userName": "Kwanda Mazibuko",
+        "userImage": "https://images.unsplash.com/photo-1546525848-3ce03ca516f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "userComment": "The evolution of architecture is mind-blowing. From ancient wonders to cutting-edge skyscrapers, it's a testament to human innovation and progress.",
+        "commentLikes": [
+          {
+            "likeId": "1",
+            "likeType": "like"
+          },
+          {
+            "likeId": "2",
+            "likeType": "love"
+          },
+          {
+            "likeId": "3",
+            "likeType": "like"
+          },
+          {
+            "likeId": "4",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "5",
+            "likeType": "love"
+          }
+        ],
+        "nestedComment": []
+      },
+      {
+        "commentId": "4",
+        "subscribed": "1st",
+        "position": "Financial Advisor at Giving Hope",
+        "commentDate": "1w",
+        "userName": "Zintle Xulu",
+        "userImage": "https://images.unsplash.com/photo-1507152832244-10d45c7eda57?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+        "userComment": "It's amazing how architecture reflects the culture of a place. It's like a visual representation of a society's values and identity.",
+        "commentLikes": [],
+        "nestedComment": []
+      },
+      {
+        "commentId": "5",
+        "subscribed": "2nd",
+        "position": "Full-Stack Developer at Just Develop IT",
+        "commentDate": "2mo",
+        "userName": "Elizabeth Van Rensburg",
+        "userImage": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "userComment": "Architects are dreamers who turn their visions into reality. Their work shapes our environment and influences our daily lives.",
+        "commentLikes": [],
+        "nestedComment": []
+      }
+    ],
+    "repost": 6
   },
   {
-    "id": "3",
+    "id": "4",
     "author": {
       "id": "u3",
       "subscribed": "3rd",
@@ -69,11 +317,12 @@
     },
     "content": "Startups are the heartbeat of innovation, the embodiment of entrepreneurial spirit, and the driving force behind transformative change. Today, let's celebrate the incredible journey of startups and the impact they have on our world. Startups begin as a spark of inspiration in the minds of passionate individuals. They take an idea, a dream, and work tirelessly to turn it into a reality. This journey of nurturing and growing ideas is the essence of entrepreneurship. Share your favorite startup success stories or tag a startup founder who inspires you. Together, let's continue to champion innovation, creativity, and the relentless pursuit of progress. 💪🌟 #Startups #Innovation #Entrepreneurship #ChangeMakers #DreamBig #Collaboration #EconomicGrowth",
     "image": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-    "likes": 432,
-    "comments": []
+    "likes": [],
+    "comments": [],
+    "repost": 0
   },
   {
-    "id": "4",
+    "id": "5",
     "author": {
       "id": "u5",
       "subscribed": "1st",
@@ -83,24 +332,370 @@
     },
     "content": "At Mercedes-Benz’s Design No. 5 event at its Carlsbad, California design centre, the automaker pulled the covers off its Vision One-Eleven electric vehicle, a concept sports car study that “progressively reinterprets” the C 111 research vehicles of the late 1960s and early 1970s, a series of gull-wing cars that tested a variety of powertrains, including Wankels, turbodiesels, and gas V8s, setting numerous speed records in the process.",
     "image": "https://smartcdn.gprod.postmedia.digital/driving/wp-content/uploads/2023/06/2023-Mercedes-Benz-Vision-One-Eleven-concept-16.jpg",
-    "likes": 254,
-    "comments": [
+    "likes": [
       {
-        "user": {
-          "name": "Elon Musk",
-          "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/elon.png"
-        },
-        "comment": "Fight me",
-        "timestamp": "2023-07-16T17:15:00Z"
+        "id": "1",
+        "userImage": "https://images.unsplash.com/photo-1556015048-4d3aa10df74c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80",
+        "likeType": "love"
       },
       {
-        "user": {
-          "name": "Peter Johnson",
-          "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/11.png"
-        },
-        "comment": "Great job!",
-        "timestamp": "2023-07-16T18:00:00Z"
+        "id": "2",
+        "userImage": "https://images.unsplash.com/photo-1552337557-45792b252a2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "3",
+        "userImage": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "likeType": "like"
+      },
+      {
+        "id": "4",
+        "userImage": "https://images.unsplash.com/photo-1519164497992-65f6b58a2981?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=927&q=80",
+        "likeType": "celebrate"
+      },
+      {
+        "id": "5",
+        "userImage": "https://images.unsplash.com/photo-1508511267-5a04ee04ca95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "6",
+        "userImage": "https://images.unsplash.com/photo-1531123414780-f74242c2b052?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "7",
+        "userImage": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "8",
+        "userImage": "https://images.unsplash.com/photo-1441014023725-517f53f8ed61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "9",
+        "userImage": "https://images.unsplash.com/photo-1545912453-3d32e20f72bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "10",
+        "userImage": "https://images.unsplash.com/photo-1545912453-db258ca9b7b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "11",
+        "userImage": "https://images.unsplash.com/photo-1582610285985-a42d9193f2fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "12",
+        "userImage": "https://images.unsplash.com/photo-1552510010-e688a909141a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "13",
+        "userImage": "https://images.unsplash.com/photo-1607062294253-93e9ce166448?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "14",
+        "userImage": "https://images.unsplash.com/photo-1554683312-8ff7fc11a74b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "15",
+        "userImage": "https://images.unsplash.com/photo-1485290334039-a3c69043e517?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "16",
+        "userImage": "https://images.unsplash.com/photo-1585883308132-4ba686bb4957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "17",
+        "userImage": "https://images.unsplash.com/photo-1468011749792-10026eb12caf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "18",
+        "userImage": "https://images.unsplash.com/photo-1502982899975-893c9cf39028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "19",
+        "userImage": "https://images.unsplash.com/photo-1524267213992-b76e8577d046?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "20",
+        "userImage": "https://images.unsplash.com/photo-1530554313278-5fc75c0b5a80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "love"
       }
-    ]
+    ],
+    "comments": [
+      {
+        "commentId": "1",
+        "subscribed": "1st",
+        "position": "3rd Year Student at Harvard University",
+        "commentDate": "3mins",
+        "userName": "Autumn Ferrero",
+        "userImage": "https://images.unsplash.com/photo-1502163140606-888448ae8cfe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "userComment": "Wow, Mercedes-Benz continues to push the boundaries of automotive design and innovation! The Vision One-Eleven concept electric vehicle looks like a futuristic masterpiece. I'm intrigued by how it pays homage to the classic C 111 research vehicles while embracing cutting-edge electric technology. Can't wait to see more details about its performance and features!",
+        "commentLikes": [
+          {
+            "likeId": "1",
+            "likeType": "like"
+          },
+          {
+            "likeId": "2",
+            "likeType": "love"
+          },
+          {
+            "likeId": "3",
+            "likeType": "like"
+          }
+        ],
+        "nestedComment": []
+      },
+      {
+        "commentId": "2",
+        "subscribed": "1st",
+        "position": "Financial Advisor at Vox Telecommunications",
+        "commentDate": "20h",
+        "userName": "Rodgers Distel",
+        "userImage": "https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "userComment": "The C 111 series was legendary for its experimental approach to powertrains, and now Mercedes is taking that legacy into the electric age with the Vision One-Eleven. It's impressive to see how they're blending the past and the future. I'm eager to learn more about the electric drivetrain and if it can match the speed records of its predecessors!",
+        "commentLikes": [
+          {
+            "likeId": "1",
+            "likeType": "like"
+          },
+          {
+            "likeId": "2",
+            "likeType": "love"
+          },
+          {
+            "likeId": "3",
+            "likeType": "like"
+          },
+          {
+            "likeId": "4",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "5",
+            "likeType": "love"
+          },
+          {
+            "likeId": "6",
+            "likeType": "like"
+          },
+          {
+            "likeId": "7",
+            "likeType": "love"
+          },
+          {
+            "likeId": "8",
+            "likeType": "like"
+          },
+          {
+            "likeId": "9",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "10",
+            "likeType": "love"
+          },
+          {
+            "likeId": "11",
+            "likeType": "like"
+          },
+          {
+            "likeId": "12",
+            "likeType": "love"
+          },
+          {
+            "likeId": "13",
+            "likeType": "like"
+          },
+          {
+            "likeId": "14",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "15",
+            "likeType": "love"
+          }
+        ],
+        "nestedComment": []
+      },
+      {
+        "commentId": "3",
+        "subscribed": "2nd",
+        "position": "Data Scientist at Finlab FSP",
+        "commentDate": "3d",
+        "userName": "Julia Mokwena",
+        "userImage": "https://images.unsplash.com/photo-1523824921871-d6f1a15151f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "userComment": "Mercedes-Benz has always been a pioneer in automotive engineering, and the Vision One-Eleven is another testament to their commitment to innovation. Electric sports cars are the future, and I'm excited to see how this concept car evolves. The design already looks stunning, and I hope it lives up to the C 111's legacy in terms of performance and records.",
+        "commentLikes": [
+          {
+            "likeId": "1",
+            "likeType": "celebrate"
+          },
+          {
+            "likeId": "2",
+            "likeType": "love"
+          },
+          {
+            "likeId": "3",
+            "likeType": "like"
+          },
+          {
+            "likeId": "4",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "5",
+            "likeType": "love"
+          }
+        ],
+        "nestedComment": []
+      },
+      {
+        "commentId": "4",
+        "subscribed": "3rd",
+        "position": "Senior Digital Marketer at Cambridge University",
+        "commentDate": "5d",
+        "userName": "Redd Wong",
+        "userImage": "https://images.unsplash.com/photo-1543132220-3ec99c6094dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "userComment": "Those gull-wing doors always grab attention! Mercedes-Benz's Vision One-Eleven seems like a blend of nostalgia and cutting-edge technology. I'm curious about the range, acceleration, and handling of this electric sports car. If it lives up to the C 111's reputation for speed, it could be a game-changer in the EV world.",
+        "commentLikes": [
+          {
+            "likeId": "1",
+            "likeType": "celebrate"
+          },
+          {
+            "likeId": "2",
+            "likeType": "love"
+          },
+          {
+            "likeId": "3",
+            "likeType": "like"
+          },
+          {
+            "likeId": "4",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "5",
+            "likeType": "love"
+          },
+          {
+            "likeId": "6",
+            "likeType": "like"
+          },
+          {
+            "likeId": "7",
+            "likeType": "love"
+          }
+        ],
+        "nestedComment": []
+      },
+      {
+        "commentId": "5",
+        "subscribed": "1st",
+        "position": "Game Developer at Unity Software Corp.",
+        "commentDate": "1w",
+        "userName": "Zamokhule Zwane",
+        "userImage": "https://images.unsplash.com/photo-1529688530647-93a6e1916f5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1036&q=80",
+        "userComment": "Electric vehicles are the future, and Mercedes-Benz's Vision One-Eleven showcases their commitment to sustainable mobility. It's exciting to see a concept car that draws inspiration from the iconic C 111 series. I hope this paves the way for more eco-friendly sports cars in the market. Kudos to Mercedes for pushing the envelope!",
+        "commentLikes": [
+          {
+            "likeId": "1",
+            "likeType": "celebrate"
+          },
+          {
+            "likeId": "2",
+            "likeType": "love"
+          },
+          {
+            "likeId": "3",
+            "likeType": "like"
+          },
+          {
+            "likeId": "4",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "5",
+            "likeType": "love"
+          },
+          {
+            "likeId": "6",
+            "likeType": "like"
+          },
+          {
+            "likeId": "7",
+            "likeType": "love"
+          },
+          {
+            "likeId": "8",
+            "likeType": "love"
+          },
+          {
+            "likeId": "9",
+            "likeType": "like"
+          },
+          {
+            "likeId": "10",
+            "likeType": "love"
+          },
+          {
+            "likeId": "11",
+            "likeType": "celebrate"
+          },
+          {
+            "likeId": "12",
+            "likeType": "love"
+          },
+          {
+            "likeId": "13",
+            "likeType": "like"
+          },
+          {
+            "likeId": "14",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "15",
+            "likeType": "love"
+          },
+          {
+            "likeId": "16",
+            "likeType": "like"
+          },
+          {
+            "likeId": "17",
+            "likeType": "love"
+          },
+          {
+            "likeId": "18",
+            "likeType": "love"
+          },
+          {
+            "likeId": "19",
+            "likeType": "like"
+          },
+          {
+            "likeId": "20",
+            "likeType": "love"
+          }
+        ],
+        "nestedComment": []
+      }
+    ],
+    "repost": 294
   }
 ]

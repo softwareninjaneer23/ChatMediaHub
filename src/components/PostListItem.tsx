@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  Image,
-  TouchableOpacity,
-  Pressable,
-} from "react-native";
+import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
 import {
   Entypo,
   FontAwesome,
@@ -17,7 +10,7 @@ import { Link } from "expo-router";
 
 //customs
 import { Post } from "../types";
-import { COLORS } from "../constants";
+import { COLORS, images } from "../constants";
 
 //specify the prop type
 type PostListItemProps = {
@@ -85,6 +78,84 @@ export default function PostListItem({ post }: PostListItemProps) {
         )}
       </View>
 
+      {/*show post action count*/}
+      {post.likes.length !== 0 && (
+        <View style={styles.postsReactionCountContainer}>
+          {/*like section*/}
+          <View style={styles.postsReactionLikeCountContainer}>
+            <View style={styles.postsReactionLikeCountTextContent}>
+              {/*like icons*/}
+              <View style={styles.commentsReactionTypeContent}>
+                {post.likes
+                  .reduce((uniqueLikes: { likeType: string }[], like) => {
+                    if (
+                      !uniqueLikes.some(
+                        (uniqueLike) => uniqueLike.likeType === like.likeType
+                      )
+                    ) {
+                      uniqueLikes.push(like);
+                    }
+                    return uniqueLikes;
+                  }, [])
+                  .map((uniqueLike, i) => (
+                    <View
+                      key={i}
+                      style={styles.commentsReactionImageItemContainer}
+                    >
+                      {uniqueLike.likeType === "love" ? (
+                        <Image
+                          key={i}
+                          source={{ uri: images.love }}
+                          style={styles.commentsReactionImageItem}
+                        />
+                      ) : uniqueLike.likeType === "celebrate" ? (
+                        <Image
+                          key={i}
+                          source={{ uri: images.celebrate }}
+                          style={styles.commentsReactionImageItem}
+                        />
+                      ) : uniqueLike.likeType === "insightful" ? (
+                        <Image
+                          key={i}
+                          source={{ uri: images.insightful }}
+                          style={styles.commentsReactionImageItem}
+                        />
+                      ) : (
+                        <Image
+                          key={i}
+                          source={{ uri: images.like }}
+                          style={styles.commentsReactionImageItem}
+                        />
+                      )}
+                    </View>
+                  ))}
+              </View>
+
+              {/*like count*/}
+              <Text style={styles.postsReactionLikeCountTextItem}>
+                {post.likes.length}
+              </Text>
+            </View>
+          </View>
+
+          {/*comment and repost section*/}
+          <View style={styles.postsReactionCommentContainer}>
+            {post.comments.length !== 0 && (
+              <Text style={styles.postsReactionCommentTextItem}>
+                {post.comments.length} comments{"  "}·{"  "}
+              </Text>
+            )}
+
+            {/*repost count*/}
+            {post.repost && (
+              <Text style={styles.postsReactionCommentTextItem}>
+                {post.repost} reposts
+              </Text>
+            )}
+          </View>
+        </View>
+      )}
+
       {/*user commenting action section*/}
       <View style={styles.userActionContainer}>
         {/*like action*/}
@@ -93,6 +164,7 @@ export default function PostListItem({ post }: PostListItemProps) {
           style={styles.actionContentContainer}
         >
           <SimpleLineIcons name="like" size={16} color={COLORS.lightBlue} />
+          <Text style={styles.actionTextItem}>Like</Text>
         </TouchableOpacity>
 
         {/*comment action*/}
@@ -101,6 +173,7 @@ export default function PostListItem({ post }: PostListItemProps) {
           style={styles.actionContentContainer}
         >
           <FontAwesome5 name="comment" size={16} color={COLORS.lightBlue} />
+          <Text style={styles.actionTextItem}>Comment</Text>
         </TouchableOpacity>
 
         {/*share action*/}
@@ -113,14 +186,16 @@ export default function PostListItem({ post }: PostListItemProps) {
             size={16}
             color={COLORS.lightBlue}
           />
+          <Text style={styles.actionTextItem}>Repost</Text>
         </TouchableOpacity>
 
         {/*send action*/}
         <TouchableOpacity
-          onPress={() => console.log("send pressed")}
+          onPress={() => console.log("send presseds")}
           style={styles.actionContentContainer}
         >
           <FontAwesome name="send-o" size={16} color={COLORS.lightBlue} />
+          <Text style={styles.actionTextItem}>Send</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -216,10 +291,65 @@ const styles = StyleSheet.create({
     resizeMode: "contain",
   },
 
+  //post reactions count
+  postsReactionCountContainer: {
+    paddingHorizontal: 15,
+    paddingVertical: 10,
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  postsReactionLikeCountContainer: {
+    width: "40%",
+    justifyContent: "center",
+    alignItems: "flex-start",
+  },
+  postsReactionLikeCountTextContent: {
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "row",
+  },
+  commentsReactionTypeContent: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  commentsReactionImageItemContainer: {
+    maxWidth: 10,
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  commentsReactionImageItem: {
+    width: 6,
+    height: 6,
+    padding: 7,
+    borderRadius: 10,
+    resizeMode: "contain",
+    backgroundColor: COLORS.lightGray,
+  },
+  postsReactionLikeCountTextItem: {
+    marginLeft: 10,
+    color: COLORS.white,
+    fontSize: 12,
+    fontWeight: "400",
+    opacity: 0.7,
+  },
+  postsReactionCommentContainer: {
+    width: "60%",
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    alignItems: "flex-end",
+  },
+  postsReactionCommentTextItem: {
+    color: COLORS.white,
+    fontSize: 12,
+    fontWeight: "400",
+    opacity: 0.7,
+  },
+
   //bottom image section
   userActionContainer: {
     width: "100%",
-    paddingVertical: 5,
+    paddingVertical: 10,
     flexDirection: "row",
     justifyContent: "space-around",
     borderColor: COLORS.gray,
@@ -230,6 +360,12 @@ const styles = StyleSheet.create({
     height: 30,
     justifyContent: "center",
     alignItems: "center",
-    flexDirection: "row",
+    flexDirection: "column",
+  },
+  actionTextItem: {
+    marginTop: 2,
+    color: COLORS.lightBlue,
+    fontSize: 12,
+    fontWeight: "600",
   },
 });
