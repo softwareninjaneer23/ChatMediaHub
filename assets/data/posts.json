@@ -1,6 +1,15 @@
 [
   {
     "id": "1",
+    "public": true,
+    "isAd": false,
+    "follower": "0",
+    "companyName": "",
+    "webLink": "",
+    "webTitle": "",
+    "webCTA": "",
+    "webCTAUri": "",
+    "createdAt": "25mins",
     "author": {
       "id": "u2",
       "subscribed": "1st",
@@ -180,6 +189,15 @@
   },
   {
     "id": "2",
+    "public": false,
+    "isAd": false,
+    "follower": "0",
+    "companyName": "",
+    "webLink": "",
+    "webTitle": "",
+    "webCTA": "",
+    "webCTAUri": "",
+    "createdAt": "2h",
     "author": {
       "id": "u2",
       "subscribed": "1st",
@@ -195,6 +213,241 @@
   },
   {
     "id": "3",
+    "public": false,
+    "isAd": true,
+    "follower": "274866",
+    "companyName": "Cisco",
+    "webLink": "mkto.cisco.com",
+    "webTitle": "Watch Now On-Demand",
+    "webCTA": "sign up",
+    "webCTAUri": "learningnetwork.cisco.com/s/",
+    "createdAt": "3d",
+    "author": {
+      "id": "u4",
+      "subscribed": "2nd",
+      "name": "Cisco Training and Certification",
+      "position": "Digital Communications Technology",
+      "image": "https://s3-symbol-logo.tradingview.com/cisco--600.png"
+    },
+    "content": "Launch your career in networking or cybersecurity with a new entry-level Cisco Certified Support Technician Certification.",
+    "image": "https://media.licdn.com/dms/image/D4E10AQETXu70Femznw/image-shrink_800/0/1695215795315/Essentials_of_CCST_FacebookIG_1080x1080jpg?e=1697349600&v=beta&t=Pti0ioIeZk1dEi50soeOsK56C7Q-WsJ8RwxYMd-NlQk",
+    "likes": [
+      {
+        "id": "1",
+        "userImage": "https://images.unsplash.com/photo-1573497019707-1c04de26e58c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "like"
+      },
+      {
+        "id": "2",
+        "userImage": "https://images.unsplash.com/photo-1589386417686-0d34b5903d23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "likeType": "celebrate"
+      },
+      {
+        "id": "3",
+        "userImage": "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "like"
+      },
+      {
+        "id": "4",
+        "userImage": "https://images.unsplash.com/photo-1526014555208-6fce862f1457?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "5",
+        "userImage": "https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "6",
+        "userImage": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "7",
+        "userImage": "https://images.unsplash.com/photo-1484863137850-59afcfe05386?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
+        "likeType": "insightful"
+      },
+      {
+        "id": "8",
+        "userImage": "https://images.unsplash.com/photo-1525786210598-d527194d3e9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "likeType": "like"
+      },
+      {
+        "id": "9",
+        "userImage": "https://images.unsplash.com/photo-1517677129300-07b130802f46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "10",
+        "userImage": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
+        "likeType": "love"
+      },
+      {
+        "id": "11",
+        "userImage": "https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "likeType": "insightful"
+      },
+      {
+        "id": "12",
+        "userImage": "https://images.unsplash.com/photo-1583864697784-a0efc8379f70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80",
+        "likeType": "like"
+      }
+    ],
+    "comments": [
+      {
+        "commentId": "1",
+        "subscribed": "1st",
+        "position": "Digital Marketer at NumPak",
+        "commentDate": "1d",
+        "userName": "Gina Pimkina",
+        "userImage": "https://images.unsplash.com/photo-1600275669439-14e40452d20b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+        "userComment": "I recently embarked on a journey to kickstart my career in the field of networking and cybersecurity. Cisco has always been a symbol of excellence in this domain, and their new entry-level certification is a game-changer. The Cisco Certified Support Technician Certification has provided me with the knowledge and skills needed to thrive in this ever-evolving industry. It's a brilliant opportunity to take your first steps towards a promising career. Highly recommended!",
+        "commentLikes": [
+          {
+            "likeId": "1",
+            "likeType": "like"
+          },
+          {
+            "likeId": "2",
+            "likeType": "like"
+          },
+          {
+            "likeId": "3",
+            "likeType": "like"
+          },
+          {
+            "likeId": "4",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "5",
+            "likeType": "love"
+          }
+        ],
+        "nestedComment": []
+      },
+      {
+        "commentId": "2",
+        "subscribed": "3rd",
+        "position": "Senior Software Engineer at Game Store",
+        "commentDate": "5d",
+        "userName": "Bruce Mars",
+        "userImage": "https://images.unsplash.com/photo-1537511446984-935f663eb1f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "userComment": "As someone who is passionate about cybersecurity, I couldn't be more thrilled about Cisco's new certification. The Cisco Certified Support Technician Certification is the perfect gateway to a career in the world of networking and cybersecurity. The program is well-structured and comprehensive, covering all the essential aspects. Cisco's reputation for quality and innovation is well-reflected in this certification. If you're looking to enter the field, this is your golden ticket.",
+        "commentLikes": [
+          {
+            "likeId": "1",
+            "likeType": "like"
+          },
+          {
+            "likeId": "2",
+            "likeType": "love"
+          }
+        ],
+        "nestedComment": []
+      },
+      {
+        "commentId": "3",
+        "subscribed": "2nd",
+        "position": "Intermediate Database Analyst at Tech9ine",
+        "commentDate": "3w",
+        "userName": "Boitumelo Khumalo",
+        "userImage": "https://images.unsplash.com/photo-1573496799515-eebbb63814f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
+        "userComment": "I've always been interested in networking and cybersecurity, and Cisco's new entry-level certification is a dream come true. The Cisco Certified Support Technician Certification provides a strong foundation for anyone looking to start a career in this industry. The coursework is engaging, and the instructors are top-notch. Cisco's legacy in the tech world is evident in this certification program. If you're passionate about cybersecurity, this is the way to go!",
+        "commentLikes": [
+          {
+            "likeId": "1",
+            "likeType": "love"
+          }
+        ],
+        "nestedComment": []
+      },
+      {
+        "commentId": "4",
+        "subscribed": "1mo",
+        "position": "Cybersecurity Specialist at Crime Hub",
+        "commentDate": "1w",
+        "userName": "Frank Govender",
+        "userImage": "https://images.unsplash.com/photo-1569128782402-d1ec3d0c1b1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80",
+        "userComment": "The field of networking and cybersecurity has been on my radar for quite some time, and Cisco's new certification is the stepping stone I needed. The Cisco Certified Support Technician Certification is an excellent choice for those who want to launch a career in this exciting domain. The content is well-structured, and the practical experience gained during the course is invaluable. Cisco has once again demonstrated its commitment to shaping future cybersecurity professionals.",
+        "commentLikes": [
+          {
+            "likeId": "1",
+            "likeType": "like"
+          },
+          {
+            "likeId": "2",
+            "likeType": "love"
+          },
+          {
+            "likeId": "3",
+            "likeType": "like"
+          },
+          {
+            "likeId": "4",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "5",
+            "likeType": "love"
+          },
+          {
+            "likeId": "6",
+            "likeType": "like"
+          },
+          {
+            "likeId": "7",
+            "likeType": "love"
+          },
+          {
+            "likeId": "8",
+            "likeType": "like"
+          },
+          {
+            "likeId": "9",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "10",
+            "likeType": "love"
+          },
+          {
+            "likeId": "11",
+            "likeType": "like"
+          },
+          {
+            "likeId": "12",
+            "likeType": "love"
+          },
+          {
+            "likeId": "13",
+            "likeType": "like"
+          },
+          {
+            "likeId": "14",
+            "likeType": "insightful"
+          },
+          {
+            "likeId": "15",
+            "likeType": "love"
+          }
+        ],
+        "nestedComment": []
+      }
+    ],
+    "repost": 4
+  },
+  {
+    "id": "4",
+    "public": false,
+    "isAd": false,
+    "follower": "0",
+    "companyName": "",
+    "webLink": "",
+    "webTitle": "",
+    "webCTA": "",
+    "webCTAUri": "",
+    "createdAt": "3d",
     "author": {
       "id": "u1",
       "subscribed": "2nd",
@@ -307,7 +560,16 @@
     "repost": 6
   },
   {
-    "id": "4",
+    "id": "5",
+    "public": false,
+    "isAd": false,
+    "follower": "0",
+    "companyName": "",
+    "webLink": "",
+    "webTitle": "",
+    "webCTA": "",
+    "webCTAUri": "",
+    "createdAt": "1w",
     "author": {
       "id": "u3",
       "subscribed": "3rd",
@@ -322,7 +584,16 @@
     "repost": 0
   },
   {
-    "id": "5",
+    "id": "6",
+    "public": false,
+    "isAd": false,
+    "follower": "0",
+    "companyName": "",
+    "webLink": "",
+    "webTitle": "",
+    "webCTA": "",
+    "webCTAUri": "",
+    "createdAt": "2mo",
     "author": {
       "id": "u5",
       "subscribed": "1st",

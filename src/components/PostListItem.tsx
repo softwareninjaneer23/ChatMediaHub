@@ -20,6 +20,8 @@ type PostListItemProps = {
 export default function PostListItem({ post }: PostListItemProps) {
   const [showMore, setShowMore] = useState(false);
 
+  const formattedFollowers = parseInt(post.follower).toLocaleString();
+
   return (
     <View style={styles.postListContainer}>
       {/*user image top section*/}
@@ -28,20 +30,41 @@ export default function PostListItem({ post }: PostListItemProps) {
         <View style={styles.topUserImageContainer}>
           <Image
             source={{ uri: post.author.image }}
-            style={styles.topUserImageItem}
+            style={
+              !post.isAd ? styles.topUserImageItem : styles.topUserAdImageItem
+            }
           />
         </View>
 
         {/*user bio item*/}
         <View style={styles.userNameContainer}>
+          {/*user name item*/}
           <Text style={styles.userNameTextItem}>
-            <Link href={`/users/${post.author.id}`}>{post.author.name}</Link> ·{" "}
+            <Link href={`/users/${post.author.id}`}>{post.author.name}</Link>
             <Text style={styles.userSubscribeTextItem}>
-              {post.author.subscribed}
+              {!post.isAd ? " · " + post.author.subscribed : null}
             </Text>
           </Text>
+
+          {/*followers and position item*/}
           <Text style={styles.userPositionTextItem}>
-            {post.author.position}
+            {post.isAd
+              ? formattedFollowers + " followers"
+              : post.author.position}
+          </Text>
+
+          {/*prompted and createdAt item*/}
+          <Text style={styles.userPostDateTextItem}>
+            {post.isAd ? "Promoted by" : null}{" "}
+            {post.isAd && (
+              <Text style={{ fontWeight: "600" }}>{post.companyName}</Text>
+            )}
+            {!post.isAd ? post.createdAt : null}{" "}
+            {!post.public && !post.isAd && (
+              <>
+                · <Entypo name="globe" size={10} color={COLORS.white} />
+              </>
+            )}
           </Text>
         </View>
 
@@ -62,21 +85,49 @@ export default function PostListItem({ post }: PostListItemProps) {
       </View>
 
       {/*see more*/}
-      <TouchableOpacity
-        onPress={() => setShowMore(!showMore)}
-        style={styles.seeMoreTextContainer}
-      >
-        <Text style={styles.seeMoreTextItem}>
-          {showMore ? "...less" : "...see more"}
-        </Text>
-      </TouchableOpacity>
+      {!post.isAd && (
+        <TouchableOpacity
+          onPress={() => setShowMore(!showMore)}
+          style={styles.seeMoreTextContainer}
+        >
+          <Text style={styles.seeMoreTextItem}>
+            {showMore ? "...less" : "...see more"}
+          </Text>
+        </TouchableOpacity>
+      )}
 
       {/*user post image section*/}
       <View style={styles.postImageContainer}>
         {post.image && (
-          <Image source={{ uri: post.image }} style={styles.postImageItem} />
+          <Image
+            source={{ uri: post.image }}
+            style={[styles.postImageItem, { aspectRatio: post.isAd ? 1 : 1.5 }]}
+          />
         )}
       </View>
+
+      {/*ad web link section*/}
+      {post.isAd && (
+        <View style={styles.adWebLinkContainer}>
+          {/*ad title & web link section*/}
+          <View style={styles.adTitleLinkContainer}>
+            <View style={styles.adTitleContainer}>
+              <Text style={styles.adTitleTextItem}>{post.webTitle}</Text>
+            </View>
+
+            <View style={styles.adWebLinkUriContainer}>
+              <Text style={styles.adWebLinkUriTextItem}>{post.webLink}</Text>
+            </View>
+          </View>
+
+          {/*call to action section*/}
+          <View style={styles.adCTAContainer}>
+            <Link href={`https://${post.webCTAUri}`}>
+              <Text style={styles.adCTATextItem}>{post.webCTA}</Text>
+            </Link>
+          </View>
+        </View>
+      )}
 
       {/*show post action count*/}
       {post.likes.length !== 0 && (
@@ -218,7 +269,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   topUserImageContainer: {
-    width: "25%",
+    width: "23%",
     justifyContent: "center",
     alignItems: "center",
     overflow: "hidden",
@@ -230,6 +281,11 @@ const styles = StyleSheet.create({
     borderRadius: 60,
     borderColor: COLORS.lightBlue,
     borderWidth: 1.5,
+  },
+  topUserAdImageItem: {
+    width: 60,
+    height: 60,
+    resizeMode: "contain",
   },
   userNameContainer: {
     width: "65%",
@@ -249,6 +305,13 @@ const styles = StyleSheet.create({
     opacity: 0.5,
   },
   userSubscribeTextItem: {
+    color: COLORS.white,
+    fontSize: 12,
+    fontWeight: "400",
+    opacity: 0.5,
+  },
+  userPostDateTextItem: {
+    marginTop: 4,
     color: COLORS.white,
     fontSize: 12,
     fontWeight: "400",
@@ -287,8 +350,48 @@ const styles = StyleSheet.create({
   },
   postImageItem: {
     width: "100%",
-    aspectRatio: 1.5,
-    resizeMode: "contain",
+    resizeMode: "cover",
+  },
+
+  //web link section
+  adWebLinkContainer: {
+    width: "100%",
+    paddingVertical: 10,
+    paddingHorizontal: 10,
+    flexDirection: "row",
+    backgroundColor: COLORS.reechGray,
+  },
+  adTitleLinkContainer: {
+    width: "75%",
+    flexDirection: "column",
+  },
+  adTitleContainer: {
+    marginBottom: 8,
+  },
+  adTitleTextItem: {
+    color: COLORS.white,
+    fontSize: 16,
+    fontWeight: "600",
+  },
+  adWebLinkUriContainer: {
+    flexDirection: "column",
+  },
+  adWebLinkUriTextItem: {
+    color: COLORS.white,
+    fontSize: 12,
+    fontWeight: "400",
+    opacity: 0.5,
+  },
+  adCTAContainer: {
+    width: "20%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  adCTATextItem: {
+    color: COLORS.lightBlue,
+    fontSize: 16,
+    fontWeight: "400",
+    textTransform: "capitalize",
   },
 
   //post reactions count

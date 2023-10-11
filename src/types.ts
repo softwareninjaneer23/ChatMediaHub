@@ -3,6 +3,15 @@
 //home feed types
 export type Post = {
   id: string;
+  createdAt: string;
+  public: boolean;
+  isAd: boolean;
+  companyName: string;
+  webLink: string;
+  webTitle: string;
+  webCTA: string;
+  webCTAUri: string;
+  follower: string;
   content: string;
   image?: string; // string or missing
   likes: Likes[];

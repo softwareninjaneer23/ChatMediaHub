@@ -13,7 +13,6 @@ import { Link, useLocalSearchParams } from "expo-router";
 import {
   AntDesign,
   Entypo,
-  Feather,
   FontAwesome,
   FontAwesome5,
   Ionicons,
@@ -42,10 +41,13 @@ export default function PostDetailsScreen() {
   const [sortCommentsModal, setSortCommentsModal] = useState(false);
   const [showMore, setShowMore] = useState(false);
   const [showNestedComment, setShowNestedComment] = useState(false);
+  const [showReactionScroll, setShowReactionScroll] = useState(false);
 
   const toggleSortCommentModal = () => {
     setSortCommentsModal(!sortCommentsModal);
   };
+
+  const formattedFollowers = parseInt(post.follower).toLocaleString();
 
   return (
     <View style={styles.postDetailsContainer}>
@@ -59,21 +61,38 @@ export default function PostDetailsScreen() {
           <View style={styles.topsUserImageContainer}>
             <Image
               source={{ uri: post.author.image }}
-              style={styles.topsUserImageItem}
+              style={
+                !post.isAd
+                  ? styles.topsUserImageItem
+                  : styles.topsUserAdsImageItem
+              }
             />
           </View>
 
           {/*user bio item*/}
           <View style={styles.usersNameContainer}>
             <Text style={styles.usersNameTextItem}>
-              <Link href={`/users/${post.author.id}`}>{post.author.name}</Link>{" "}
-              ·{" "}
+              <Link href={`/users/${post.author.id}`}>{post.author.name}</Link>
               <Text style={styles.usersSubscribeTextItem}>
-                {post.author.subscribed}
+                {!post.isAd ? " · " + post.author.subscribed : null}
               </Text>
             </Text>
             <Text style={styles.usersPositionTextItem}>
-              {post.author.position}
+              {post.isAd
+                ? formattedFollowers + " followers"
+                : post.author.position}
+            </Text>
+            <Text style={styles.userPostDateTextItem}>
+              {post.isAd ? "Promoted by" : null}{" "}
+              {post.isAd && (
+                <Text style={{ fontWeight: "600" }}>{post.companyName}</Text>
+              )}
+              {!post.isAd ? post.createdAt : null}{" "}
+              {!post.public && !post.isAd && (
+                <>
+                  · <Entypo name="globe" size={10} color={COLORS.white} />
+                </>
+              )}
             </Text>
           </View>
 
@@ -84,6 +103,7 @@ export default function PostDetailsScreen() {
         </View>
 
         {/*user post content section*/}
+
         <View style={styles.postsTextContentContainer}>
           <Text
             numberOfLines={showMore ? 100 : 3}
@@ -94,21 +114,52 @@ export default function PostDetailsScreen() {
         </View>
 
         {/*see more*/}
-        <TouchableOpacity
-          onPress={() => setShowMore(!showMore)}
-          style={styles.seesMoreTextContainer}
-        >
-          <Text style={styles.seesMoreTextItem}>
-            {showMore ? "...less" : "...see more"}
-          </Text>
-        </TouchableOpacity>
+        {!post.isAd && (
+          <TouchableOpacity
+            onPress={() => setShowMore(!showMore)}
+            style={styles.seesMoreTextContainer}
+          >
+            <Text style={styles.seesMoreTextItem}>
+              {showMore ? "...less" : "...see more"}
+            </Text>
+          </TouchableOpacity>
+        )}
 
         {/*user post image section*/}
         <View style={styles.postsImageContainer}>
           {post.image && (
-            <Image source={{ uri: post.image }} style={styles.postsImageItem} />
+            <Image
+              source={{ uri: post.image }}
+              style={[
+                styles.postsImageItem,
+                { aspectRatio: post.isAd ? 1 : 1.5 },
+              ]}
+            />
           )}
         </View>
+
+        {/*ad web link section*/}
+        {post.isAd && (
+          <View style={styles.adsWebLinkContainer}>
+            {/*ad title & web link section*/}
+            <View style={styles.adsTitleLinkContainer}>
+              <View style={styles.adsTitleContainer}>
+                <Text style={styles.adsTitleTextItem}>{post.webTitle}</Text>
+              </View>
+
+              <View style={styles.adsWebLinkUriContainer}>
+                <Text style={styles.adsWebLinkUriTextItem}>{post.webLink}</Text>
+              </View>
+            </View>
+
+            {/*call to action section*/}
+            <View style={styles.adsCTAContainer}>
+              <Link href={`https://${post.webCTAUri}`}>
+                <Text style={styles.adsCTATextItem}>{post.webCTA}</Text>
+              </Link>
+            </View>
+          </View>
+        )}
 
         {/*show post action count*/}
         {post.likes.length !== 0 && (
@@ -242,64 +293,102 @@ export default function PostDetailsScreen() {
             {/*reactions people section*/}
             <View style={styles.postReactionsPeopleContainer}>
               {/*reacted people section*/}
-              <View style={styles.postReactionsPeopleContent}>
-                {post.likes.map((like, i) => (
-                  <View key={i} style={styles.postReactionsPeopleItemContainer}>
-                    {Platform.OS === "ios"
-                      ? i < 5 && (
-                          <>
-                            <Image
-                              source={{ uri: like.userImage }}
-                              style={styles.postReactionsPeopleImageItem}
-                            />
-                            <Image
-                              source={{
-                                uri:
-                                  like.likeType === "like"
-                                    ? images.like
-                                    : like.likeType === "insightful"
-                                    ? images.insightful
-                                    : like.likeType === "love"
-                                    ? images.love
-                                    : like.likeType === "celebrate"
-                                    ? images.celebrate
-                                    : images.like,
-                              }}
-                              style={styles.postReactionsPeopleIconItem}
-                            />
-                          </>
-                        )
-                      : i < 4 && (
-                          <>
-                            <Image
-                              source={{ uri: like.userImage }}
-                              style={styles.postReactionsPeopleImageItem}
-                            />
-                            <Image
-                              source={{
-                                uri:
-                                  like.likeType === "like"
-                                    ? images.like
-                                    : like.likeType === "insightful"
-                                    ? images.insightful
-                                    : like.likeType === "love"
-                                    ? images.love
-                                    : like.likeType === "celebrate"
-                                    ? images.celebrate
-                                    : images.like,
-                              }}
-                              style={styles.postReactionsPeopleIconItem}
-                            />
-                          </>
-                        )}
-                  </View>
-                ))}
-              </View>
+              {showReactionScroll ? (
+                <ScrollView
+                  horizontal
+                  showsHorizontalScrollIndicator={false}
+                  style={styles.postReactionsScrollPeopleContent}
+                >
+                  {post.likes.map((like, i) => (
+                    <View
+                      key={i}
+                      style={styles.postReactionsPeopleItemContainer}
+                    >
+                      <Image
+                        source={{ uri: like.userImage }}
+                        style={styles.postReactionsPeopleImageItem}
+                      />
+                      <Image
+                        source={{
+                          uri:
+                            like.likeType === "like"
+                              ? images.like
+                              : like.likeType === "insightful"
+                              ? images.insightful
+                              : like.likeType === "love"
+                              ? images.love
+                              : like.likeType === "celebrate"
+                              ? images.celebrate
+                              : images.like,
+                        }}
+                        style={styles.postReactionsPeopleIconItem}
+                      />
+                    </View>
+                  ))}
+                </ScrollView>
+              ) : (
+                <View style={styles.postReactionsPeopleContent}>
+                  {post.likes.map((like, i) => (
+                    <View
+                      key={i}
+                      style={styles.postReactionsPeopleItemContainer}
+                    >
+                      {Platform.OS === "ios"
+                        ? i < 5 && (
+                            <>
+                              <Image
+                                source={{ uri: like.userImage }}
+                                style={styles.postReactionsPeopleImageItem}
+                              />
+                              <Image
+                                source={{
+                                  uri:
+                                    like.likeType === "like"
+                                      ? images.like
+                                      : like.likeType === "insightful"
+                                      ? images.insightful
+                                      : like.likeType === "love"
+                                      ? images.love
+                                      : like.likeType === "celebrate"
+                                      ? images.celebrate
+                                      : images.like,
+                                }}
+                                style={styles.postReactionsPeopleIconItem}
+                              />
+                            </>
+                          )
+                        : i < 4 && (
+                            <>
+                              <Image
+                                source={{ uri: like.userImage }}
+                                style={styles.postReactionsPeopleImageItem}
+                              />
+                              <Image
+                                source={{
+                                  uri:
+                                    like.likeType === "like"
+                                      ? images.like
+                                      : like.likeType === "insightful"
+                                      ? images.insightful
+                                      : like.likeType === "love"
+                                      ? images.love
+                                      : like.likeType === "celebrate"
+                                      ? images.celebrate
+                                      : images.like,
+                                }}
+                                style={styles.postReactionsPeopleIconItem}
+                              />
+                            </>
+                          )}
+                    </View>
+                  ))}
+                </View>
+              )}
 
               {/*reacted more section*/}
-              {post.likes.length > 5 && (
+              {post.likes.length > 5 && !showReactionScroll && (
                 <TouchableOpacity
-                  onPress={() => console.log("more reaction people pressed")}
+                  onPress={() => setShowReactionScroll(true)}
                   style={styles.postReactionsPeopleSeeAllContent}
                 >
                   <Ionicons
@@ -691,7 +780,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   topsUserImageContainer: {
-    width: "25%",
+    width: "23%",
     justifyContent: "center",
     alignItems: "center",
     overflow: "hidden",
@@ -703,6 +792,11 @@ const styles = StyleSheet.create({
     borderRadius: 60,
     borderColor: COLORS.lightBlue,
     borderWidth: 1.5,
+  },
+  topsUserAdsImageItem: {
+    width: 60,
+    height: 60,
+    resizeMode: "contain",
   },
   usersNameContainer: {
     width: "65%",
@@ -716,6 +810,13 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   usersPositionTextItem: {
+    color: COLORS.white,
+    fontSize: 12,
+    fontWeight: "400",
+    opacity: 0.5,
+  },
+  userPostDateTextItem: {
+    marginTop: 4,
     color: COLORS.white,
     fontSize: 12,
     fontWeight: "400",
@@ -760,8 +861,48 @@ const styles = StyleSheet.create({
   },
   postsImageItem: {
     width: "100%",
-    aspectRatio: 1.5,
-    resizeMode: "contain",
+    resizeMode: "cover",
+  },
+
+  //web link section
+  adsWebLinkContainer: {
+    width: "100%",
+    paddingVertical: 10,
+    paddingHorizontal: 10,
+    flexDirection: "row",
+    backgroundColor: COLORS.reechGray,
+  },
+  adsTitleLinkContainer: {
+    width: "75%",
+    flexDirection: "column",
+  },
+  adsTitleContainer: {
+    marginBottom: 8,
+  },
+  adsTitleTextItem: {
+    color: COLORS.white,
+    fontSize: 16,
+    fontWeight: "600",
+  },
+  adsWebLinkUriContainer: {
+    flexDirection: "column",
+  },
+  adsWebLinkUriTextItem: {
+    color: COLORS.white,
+    fontSize: 12,
+    fontWeight: "400",
+    opacity: 0.5,
+  },
+  adsCTAContainer: {
+    width: "20%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  adsCTATextItem: {
+    color: COLORS.lightBlue,
+    fontSize: 16,
+    fontWeight: "400",
+    textTransform: "capitalize",
   },
 
   //post reaction count section
@@ -826,7 +967,8 @@ const styles = StyleSheet.create({
 
   //post reaction section
   postReactionsContainer: {
-    marginVertical: 10,
+    marginTop: 10,
+    marginBottom: 0,
     paddingHorizontal: 20,
     flexDirection: "column",
   },
@@ -846,6 +988,11 @@ const styles = StyleSheet.create({
   },
   postReactionsPeopleContent: {
     width: "80%",
+    flexDirection: "row",
+  },
+  postReactionsScrollPeopleContent: {
+    width: "80%",
+    height: 48,
     flexDirection: "row",
   },
   postReactionsPeopleItemContainer: {
