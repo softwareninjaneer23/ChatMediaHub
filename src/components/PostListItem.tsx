@@ -1,5 +1,12 @@
-import React, { useState } from "react";
-import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
+import React, { useState, useRef } from "react";
+import {
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  TouchableWithoutFeedback,
+  TouchableOpacity,
+} from "react-native";
 import {
   Entypo,
   FontAwesome,
@@ -7,6 +14,7 @@ import {
   SimpleLineIcons,
 } from "@expo/vector-icons";
 import { Link } from "expo-router";
+import { Video, ResizeMode } from "expo-av";
 
 //customs
 import { Post } from "../types";
@@ -18,7 +26,11 @@ type PostListItemProps = {
 };
 
 export default function PostListItem({ post }: PostListItemProps) {
+  const video = useRef(null);
+
+  //state handlers
   const [showMore, setShowMore] = useState(false);
+  const [status, setStatus] = useState({});
 
   const formattedFollowers = parseInt(post.follower).toLocaleString();
 
@@ -77,7 +89,7 @@ export default function PostListItem({ post }: PostListItemProps) {
       {/*user post content section*/}
       <View style={styles.postTextContentContainer}>
         <Text
-          numberOfLines={showMore ? 100 : 3}
+          numberOfLines={showMore ? undefined : 3}
           style={styles.postTextContentTextItem}
         >
           <Link href={`/posts/${post.id}`}>{post.content}</Link>
@@ -85,24 +97,48 @@ export default function PostListItem({ post }: PostListItemProps) {
       </View>
 
       {/*see more*/}
-      {!post.isAd && (
-        <TouchableOpacity
-          onPress={() => setShowMore(!showMore)}
-          style={styles.seeMoreTextContainer}
-        >
-          <Text style={styles.seeMoreTextItem}>
-            {showMore ? "...less" : "...see more"}
-          </Text>
-        </TouchableOpacity>
-      )}
+      <TouchableOpacity
+        onPress={() => setShowMore(!showMore)}
+        style={styles.seeMoreTextContainer}
+      >
+        <Text style={styles.seeMoreTextItem}>
+          {showMore ? "...less" : "...see more"}
+        </Text>
+      </TouchableOpacity>
 
       {/*user post image section*/}
       <View style={styles.postImageContainer}>
-        {post.image && (
-          <Image
-            source={{ uri: post.image }}
-            style={[styles.postImageItem, { aspectRatio: post.isAd ? 1 : 1.5 }]}
-          />
+        {post.isVideo === true && post.image === "" ? (
+          <TouchableWithoutFeedback
+            onPress={() =>
+              status.isPlaying
+                ? video.current.pauseAsync()
+                : video.current.playAsync()
+            }
+          >
+            <Video
+              ref={video}
+              source={{ uri: post.videoUri }}
+              posterSource={{ uri: post.videoThumbnail }}
+              isLooping={false}
+              isMuted={false}
+              useNativeControls={false}
+              style={styles.videoPlayersItem}
+              resizeMode={ResizeMode.STRETCH}
+              onPlaybackStatusUpdate={(status) => setStatus(() => status)}
+              onError={(error) => console.log("Video Error", error)}
+            />
+          </TouchableWithoutFeedback>
+        ) : (
+          post.image && (
+            <Image
+              source={{ uri: post.image }}
+              style={[
+                styles.postImageItem,
+                { aspectRatio: post.isAd ? 1 : 1.5 },
+              ]}
+            />
+          )
         )}
       </View>
 
@@ -347,6 +383,10 @@ const styles = StyleSheet.create({
   },
   postImageContainer: {
     width: "100%",
+  },
+  videoPlayersItem: {
+    width: "100%",
+    aspectRatio: 1,
   },
   postImageItem: {
     width: "100%",

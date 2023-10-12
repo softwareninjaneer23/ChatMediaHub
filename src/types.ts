@@ -6,6 +6,9 @@ export type Post = {
   createdAt: string;
   public: boolean;
   isAd: boolean;
+  isVideo: boolean;
+  videoThumbnail: string;
+  videoUri: string;
   companyName: string;
   webLink: string;
   webTitle: string;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import {
   StyleSheet,
   ScrollView,
@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   Platform,
   Modal,
+  TouchableWithoutFeedback,
 } from "react-native";
 import { Link, useLocalSearchParams } from "expo-router";
 import {
@@ -20,6 +21,7 @@ import {
   Octicons,
   SimpleLineIcons,
 } from "@expo/vector-icons";
+import { Video, ResizeMode } from "expo-av";
 
 //custom
 import posts from "../../../assets/data/posts.json";
@@ -31,6 +33,7 @@ export default function PostDetailsScreen() {
   const { id } = useLocalSearchParams();
 
   const post = posts.find((post) => post.id === id);
+  const video = useRef(null);
 
   //if post not found
   if (!post) {
@@ -42,6 +45,7 @@ export default function PostDetailsScreen() {
   const [showMore, setShowMore] = useState(false);
   const [showNestedComment, setShowNestedComment] = useState(false);
   const [showReactionScroll, setShowReactionScroll] = useState(false);
+  const [status, setStatus] = useState({});
 
   const toggleSortCommentModal = () => {
     setSortCommentsModal(!sortCommentsModal);
@@ -103,10 +107,9 @@ export default function PostDetailsScreen() {
         </View>
 
         {/*user post content section*/}
-
         <View style={styles.postsTextContentContainer}>
           <Text
-            numberOfLines={showMore ? 100 : 3}
+            numberOfLines={showMore ? undefined : 3}
             style={styles.postsTextContentTextItem}
           >
             <Link href={`/posts/${post.id}`}>{post.content}</Link>
@@ -114,27 +117,48 @@ export default function PostDetailsScreen() {
         </View>
 
         {/*see more*/}
-        {!post.isAd && (
-          <TouchableOpacity
-            onPress={() => setShowMore(!showMore)}
-            style={styles.seesMoreTextContainer}
-          >
-            <Text style={styles.seesMoreTextItem}>
-              {showMore ? "...less" : "...see more"}
-            </Text>
-          </TouchableOpacity>
-        )}
+        <TouchableOpacity
+          onPress={() => setShowMore(!showMore)}
+          style={styles.seesMoreTextContainer}
+        >
+          <Text style={styles.seesMoreTextItem}>
+            {showMore ? "...less" : "...see more"}
+          </Text>
+        </TouchableOpacity>
 
         {/*user post image section*/}
         <View style={styles.postsImageContainer}>
-          {post.image && (
-            <Image
-              source={{ uri: post.image }}
-              style={[
-                styles.postsImageItem,
-                { aspectRatio: post.isAd ? 1 : 1.5 },
-              ]}
-            />
+          {post.isVideo === true && post.image === "" ? (
+            <TouchableWithoutFeedback
+              onPress={() =>
+                status.isPlaying
+                  ? video.current.pauseAsync()
+                  : video.current.playAsync()
+              }
+            >
+              <Video
+                ref={video}
+                source={{ uri: post.videoUri }}
+                posterSource={{ uri: post.videoThumbnail }}
+                isLooping={false}
+                isMuted={false}
+                useNativeControls={false}
+                style={styles.videoPlayerItem}
+                resizeMode={ResizeMode.STRETCH}
+                onPlaybackStatusUpdate={(status) => setStatus(() => status)}
+                onError={(error) => console.log("Video Error", error)}
+              />
+            </TouchableWithoutFeedback>
+          ) : (
+            post.image && (
+              <Image
+                source={{ uri: post.image }}
+                style={[
+                  styles.postsImageItem,
+                  { aspectRatio: post.isAd ? 1 : 1.5 },
+                ]}
+              />
+            )
           )}
         </View>
 
@@ -858,6 +882,10 @@ const styles = StyleSheet.create({
   },
   postsImageContainer: {
     width: "100%",
+  },
+  videoPlayerItem: {
+    width: "100%",
+    aspectRatio: 1,
   },
   postsImageItem: {
     width: "100%",
