@@ -70,6 +70,7 @@ export default function TabLayout() {
         name="new-post"
         options={{
           title: "Post",
+          headerTitle: "",
           tabBarIcon: ({ color }) => (
             <TabBarIcon name="plus-square" color={color} />
           ),
